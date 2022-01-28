@@ -9,39 +9,50 @@
 }
 
 /* line 11, src/assets/scss/style.scss */
-body {
+html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* line 15, src/assets/scss/style.scss */
-header {
-  align-items: center;
-  background-color: #1A2C5B;
-  display: flex;
-  justify-content: left;
-  padding: 30px;
-}
-
-/* line 23, src/assets/scss/style.scss */
-.logo_img {
-  padding-right: 50px;
-}
-
-/* line 27, src/assets/scss/style.scss */
 a {
   text-decoration: none;
 }
 
-/* line 31, src/assets/scss/style.scss */
-.header_nav a {
-  color: #fff;
-  font-size: 18px;
-  padding: 20px;
-  transition: all 0.5s ease 0s;
+/* line 19, src/assets/scss/style.scss */
+.header_nav {
+  background-color: #1A2C5B;
+  height: 120px;
+  width: 100%;
 }
 
-/* line 38, src/assets/scss/style.scss */
-.header_nav a:hover {
+/* line 25, src/assets/scss/style.scss */
+.img_logo {
+  position: absolute;
+  padding: 20px 50px;
+}
+
+/* line 30, src/assets/scss/style.scss */
+.img_logo img {
+  height: 80px;
+}
+
+/* line 34, src/assets/scss/style.scss */
+.nav_links {
+  float: right;
+  margin-right: 1000px;
+}
+
+/* line 39, src/assets/scss/style.scss */
+.nav_links a {
+  display: inline-block;
+  line-height: 130px;
+  margin: 0 10px;
+  color: #fff;
+  font-size: 22px;
+  transition: all .5s ease 0s;
+}
+
+/* line 48, src/assets/scss/style.scss */
+.nav_links a:hover {
   color: #c4c1ff;
-  text-decoration: underline;
 }
