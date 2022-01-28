@@ -8,34 +8,43 @@
     padding: 0
 }
 
-body {
+html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-header {
-    align-items: center;
-    background-color: $dark-header-primary-color;
-    display: flex;
-    justify-content: left;
-    padding: 30px;
-}
-
-.logo_img {
-    padding-right: 50px;
 }
 
 a {
     text-decoration: none;
 }
 
-.header_nav a {
-    color: $dark-header-font-color;
-    font-size: 18px;
-    padding: 20px;
-    transition: all 0.5s ease 0s;
+.header_nav {
+    background-color: $dark-header-primary-color;
+    height: 120px;
+    width: 100%;
 }
 
-.header_nav a:hover {
+.img_logo {
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.img_logo img {
+    height: 80px;
+}
+
+.nav_links {
+    float: right;
+    margin-right: 1000px;
+}
+
+.nav_links a {
+    display: inline-block;
+    line-height: 130px;
+    margin: 0 10px;
+    color: $dark-header-font-color;
+    font-size: 22px;
+    transition: all .5s ease 0s;
+}
+
+.nav_links a:hover {
     color: $hover-color;
-    text-decoration: underline;
 }
