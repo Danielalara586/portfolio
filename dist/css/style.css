@@ -12,38 +12,39 @@
 html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #1f284a;
+  scroll-behavior: smooth;
 }
 
-/* line 16, src/assets/scss/style.scss */
+/* line 17, src/assets/scss/style.scss */
 a {
   text-decoration: none;
 }
 
-/* line 20, src/assets/scss/style.scss */
+/* line 21, src/assets/scss/style.scss */
 .header_nav {
   background-color: #071537;
   height: 100px;
   width: 100%;
 }
 
-/* line 24, src/assets/scss/style.scss */
+/* line 25, src/assets/scss/style.scss */
 .header_nav .img_logo {
   position: absolute;
   padding: 20px 30px;
 }
 
-/* line 27, src/assets/scss/style.scss */
+/* line 28, src/assets/scss/style.scss */
 .header_nav .img_logo img {
   height: 60px;
 }
 
-/* line 31, src/assets/scss/style.scss */
+/* line 32, src/assets/scss/style.scss */
 .header_nav .nav_links {
   float: right;
   margin-right: 930px;
 }
 
-/* line 34, src/assets/scss/style.scss */
+/* line 35, src/assets/scss/style.scss */
 .header_nav .nav_links a {
   display: inline-block;
   line-height: 100px;
@@ -53,22 +54,24 @@ a {
   transition: all .5s ease 0s;
 }
 
-/* line 42, src/assets/scss/style.scss */
+/* line 43, src/assets/scss/style.scss */
 .header_nav .nav_links a:hover {
   color: #c4c1ff;
 }
 
-/* line 48, src/assets/scss/style.scss */
+/* line 49, src/assets/scss/style.scss */
 section {
   padding: 20px;
+  width: 100%;
+  height: 100vh;
 }
 
-/* line 50, src/assets/scss/style.scss */
+/* line 53, src/assets/scss/style.scss */
 section h2 {
   color: #a4ebff;
 }
 
-/* line 53, src/assets/scss/style.scss */
+/* line 56, src/assets/scss/style.scss */
 section p {
   color: #fff;
   font-size: 18px;

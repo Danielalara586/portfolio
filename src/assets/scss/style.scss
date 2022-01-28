@@ -11,6 +11,7 @@
 html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: $dark-background-color;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -47,6 +48,8 @@ a {
 
 section {
     padding: 20px;
+    width: 100%;
+    height: 100vh;
     h2 {
         color: $title-color;
     }
