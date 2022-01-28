@@ -18,7 +18,7 @@ a {
 
 .header_nav {
     background-color: $dark-header-primary-color;
-    height: 120px;
+    height: 100px;
     width: 100%;
 }
 
@@ -28,18 +28,18 @@ a {
 }
 
 .img_logo img {
-    height: 80px;
+    height: 60px;
 }
 
 .nav_links {
     float: right;
-    margin-right: 1000px;
+    margin-right: 900px;
 }
 
 .nav_links a {
     display: inline-block;
-    line-height: 130px;
-    margin: 0 10px;
+    line-height: 100px;
+    margin: 0 20px;
     color: $dark-header-font-color;
     font-size: 22px;
     transition: all .5s ease 0s;
