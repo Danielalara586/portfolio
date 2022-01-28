@@ -11,39 +11,40 @@
 /* line 11, src/assets/scss/style.scss */
 html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #1f284a;
 }
 
-/* line 15, src/assets/scss/style.scss */
+/* line 16, src/assets/scss/style.scss */
 a {
   text-decoration: none;
 }
 
-/* line 19, src/assets/scss/style.scss */
+/* line 20, src/assets/scss/style.scss */
 .header_nav {
-  background-color: #1A2C5B;
+  background-color: #071537;
   height: 100px;
   width: 100%;
 }
 
-/* line 25, src/assets/scss/style.scss */
-.img_logo {
+/* line 24, src/assets/scss/style.scss */
+.header_nav .img_logo {
   position: absolute;
-  padding: 20px 50px;
+  padding: 20px 30px;
 }
 
-/* line 30, src/assets/scss/style.scss */
-.img_logo img {
+/* line 27, src/assets/scss/style.scss */
+.header_nav .img_logo img {
   height: 60px;
 }
 
-/* line 34, src/assets/scss/style.scss */
-.nav_links {
+/* line 31, src/assets/scss/style.scss */
+.header_nav .nav_links {
   float: right;
-  margin-right: 900px;
+  margin-right: 930px;
 }
 
-/* line 39, src/assets/scss/style.scss */
-.nav_links a {
+/* line 34, src/assets/scss/style.scss */
+.header_nav .nav_links a {
   display: inline-block;
   line-height: 100px;
   margin: 0 20px;
@@ -52,7 +53,24 @@ a {
   transition: all .5s ease 0s;
 }
 
-/* line 48, src/assets/scss/style.scss */
-.nav_links a:hover {
+/* line 42, src/assets/scss/style.scss */
+.header_nav .nav_links a:hover {
   color: #c4c1ff;
+}
+
+/* line 48, src/assets/scss/style.scss */
+section {
+  padding: 20px;
+}
+
+/* line 50, src/assets/scss/style.scss */
+section h2 {
+  color: #a4ebff;
+}
+
+/* line 53, src/assets/scss/style.scss */
+section p {
+  color: #fff;
+  font-size: 18px;
+  text-align: justify;
 }

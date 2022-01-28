@@ -10,6 +10,7 @@
 
 html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: $dark-background-color;
 }
 
 a {
@@ -20,31 +21,38 @@ a {
     background-color: $dark-header-primary-color;
     height: 100px;
     width: 100%;
+    .img_logo {
+        position: absolute;
+        padding: 20px 30px;
+        img {
+            height: 60px;
+        }
+    }
+    .nav_links {
+        float: right;
+        margin-right: 930px;
+        a {
+            display: inline-block;
+            line-height: 100px;
+            margin: 0 20px;
+            color: $dark-header-font-color;
+            font-size: 22px;
+            transition: all .5s ease 0s;
+        }
+        a:hover {
+            color: $hover-color;
+        }
+    }
 }
 
-.img_logo {
-    position: absolute;
-    padding: 20px 50px;
-}
-
-.img_logo img {
-    height: 60px;
-}
-
-.nav_links {
-    float: right;
-    margin-right: 900px;
-}
-
-.nav_links a {
-    display: inline-block;
-    line-height: 100px;
-    margin: 0 20px;
-    color: $dark-header-font-color;
-    font-size: 22px;
-    transition: all .5s ease 0s;
-}
-
-.nav_links a:hover {
-    color: $hover-color;
+section {
+    padding: 20px;
+    h2 {
+        color: $title-color;
+    }
+    p {
+        color: $dark-header-font-color;
+        font-size: 18px;
+        text-align: justify;
+    }
 }
