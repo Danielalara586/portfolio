@@ -93,6 +93,8 @@ a {
         }
         a:hover {
             color: $hover-background-color;
+            text-decoration: underline;
+            font-size: 25px;
         }
     }
 }
@@ -109,4 +111,10 @@ section {
         font-size: 18px;
         text-align: justify;
     }
+}
+
+.menu-fixed {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
 }
