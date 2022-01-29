@@ -10,18 +10,69 @@
 
 html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: $dark-background-color;
     scroll-behavior: smooth;
 }
 
 a {
     text-decoration: none;
+    cursor: pointer;
+}
+
+.header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    &-video {
+        @include full-screen;
+        overflow: hidden;
+        video {
+            min-width: 100%;
+            min-height: 100%;
+        }
+    }
+    &-overlay {
+        @include full-screen;
+        background-color: $overlay-backgound;
+        z-index: 1;
+        opacity: .75;
+    }
+    &-content {
+        z-index: 2;
+        h1 {
+            @include customize-text(50px, $dark-header-font-color, 20px);
+        }
+        p {
+            @include customize-text(22.5px, $dark-header-font-color, 50px);
+        }
+        .btn {
+            @include customize-text(18px, $dark-header-font-color, 20px);
+            border-radius: 25px;
+            position: relative;
+            overflow: hidden;
+            background-image: linear-gradient( 255deg, $btn-color-1 0%, $btn-color-2 50%, $btn-color-3 100%);
+            padding: 15px 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s;
+        }
+        .btn:hover {
+            box-shadow: 0 0 20px rgba(180, 246, 255, 0.77);
+            font-size: 23px;
+        }
+    }
+}
+
+.content {
+    max-width: 784px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: auto;
+    text-align: center;
 }
 
 .header_nav {
     background-color: $dark-header-primary-color;
     height: 100px;
-    width: 100%;
+    width: 100vw;
     .img_logo {
         position: absolute;
         padding: 20px 30px;
@@ -41,7 +92,7 @@ a {
             transition: all .5s ease 0s;
         }
         a:hover {
-            color: $hover-color;
+            color: $hover-background-color;
         }
     }
 }
@@ -54,7 +105,7 @@ section {
         color: $title-color;
     }
     p {
-        color: $dark-header-font-color;
+        color: $light-header-font-color;
         font-size: 18px;
         text-align: justify;
     }
