@@ -18,57 +18,6 @@ a {
     text-decoration: none;
 }
 
-.header {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-}
-
-.content {
-    max-width: 784px;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin: auto;
-    text-align: center;
-}
-
-.landing-page {
-    @include full-screen;
-    video {
-        min-width: 100%;
-        min-height: 100%;
-    }
-}
-
-.overlay {
-    @include full-screen;
-    background-color: $overlay-backgound;
-    z-index: 1;
-    opacity: .75;
-}
-
-.header-content {
-    z-index: 2;
-    h1 {
-        font-size: 50px;
-        padding-bottom: 15px;
-        color: $dark-header-font-color;
-    }
-    p {
-        font-size: 20px;
-        display: block;
-        padding-bottom: 45px;
-        color: $dark-header-font-color;
-    }
-    .btn {
-        font-size: 20px;
-        color: $dark-header-font-color;
-        background-color: $btn-color;
-        padding: 15px 30px;
-        border-radius: 10px;
-    }
-}
-
 .header_nav {
     background-color: $dark-header-primary-color;
     height: 100px;
