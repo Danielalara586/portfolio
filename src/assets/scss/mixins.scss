@@ -4,5 +4,10 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+}
+
+@mixin customize-text($font-size, $font-color, $margin) {
+    font-size: $font-size;
+    color: $font-color;
+    margin-bottom: $margin;
 }
