@@ -15,19 +15,24 @@ html {
 }
 
 /* line 16, src/assets/scss/style.scss */
+section[id] {
+  scroll-margin-top: 90px;
+}
+
+/* line 20, src/assets/scss/style.scss */
 a {
   text-decoration: none;
   cursor: pointer;
 }
 
-/* line 21, src/assets/scss/style.scss */
+/* line 25, src/assets/scss/style.scss */
 .header {
   height: 100vh;
   display: flex;
   align-items: center;
 }
 
-/* line 25, src/assets/scss/style.scss */
+/* line 29, src/assets/scss/style.scss */
 .header-video {
   position: absolute;
   top: 0;
@@ -37,13 +42,13 @@ a {
   overflow: hidden;
 }
 
-/* line 28, src/assets/scss/style.scss */
+/* line 32, src/assets/scss/style.scss */
 .header-video video {
   min-width: 100%;
   min-height: 100%;
 }
 
-/* line 33, src/assets/scss/style.scss */
+/* line 37, src/assets/scss/style.scss */
 .header-overlay {
   position: absolute;
   top: 0;
@@ -55,26 +60,26 @@ a {
   opacity: .75;
 }
 
-/* line 39, src/assets/scss/style.scss */
+/* line 43, src/assets/scss/style.scss */
 .header-content {
   z-index: 2;
 }
 
-/* line 41, src/assets/scss/style.scss */
+/* line 45, src/assets/scss/style.scss */
 .header-content h1 {
   font-size: 50px;
   color: #fff;
   margin-bottom: 20px;
 }
 
-/* line 44, src/assets/scss/style.scss */
+/* line 48, src/assets/scss/style.scss */
 .header-content p {
   font-size: 22.5px;
   color: #fff;
   margin-bottom: 50px;
 }
 
-/* line 47, src/assets/scss/style.scss */
+/* line 51, src/assets/scss/style.scss */
 .header-content .btn {
   font-size: 18px;
   color: #fff;
@@ -88,13 +93,13 @@ a {
   transition: all 0.3s;
 }
 
-/* line 57, src/assets/scss/style.scss */
+/* line 61, src/assets/scss/style.scss */
 .header-content .btn:hover {
   box-shadow: 0 0 20px rgba(180, 246, 255, 0.77);
   font-size: 23px;
 }
 
-/* line 64, src/assets/scss/style.scss */
+/* line 68, src/assets/scss/style.scss */
 .content {
   max-width: 784px;
   padding-left: 16px;
@@ -103,69 +108,63 @@ a {
   text-align: center;
 }
 
-/* line 72, src/assets/scss/style.scss */
+/* line 76, src/assets/scss/style.scss */
 .header_nav {
   background-color: #071537;
   height: 100px;
   width: 100vw;
 }
 
-/* line 76, src/assets/scss/style.scss */
+/* line 80, src/assets/scss/style.scss */
 .header_nav .img_logo {
   position: absolute;
   padding: 20px 30px;
 }
 
-/* line 79, src/assets/scss/style.scss */
+/* line 83, src/assets/scss/style.scss */
 .header_nav .img_logo img {
   height: 60px;
 }
 
-/* line 83, src/assets/scss/style.scss */
+/* line 87, src/assets/scss/style.scss */
 .header_nav .nav_links {
   float: right;
   margin-right: 930px;
 }
 
-/* line 86, src/assets/scss/style.scss */
+/* line 90, src/assets/scss/style.scss */
 .header_nav .nav_links a {
   display: inline-block;
-  line-height: 100px;
+  line-height: 110px;
   margin: 0 20px;
   color: #fff;
   font-size: 22px;
   transition: all .5s ease 0s;
 }
 
-/* line 94, src/assets/scss/style.scss */
+/* line 98, src/assets/scss/style.scss */
 .header_nav .nav_links a:hover {
   color: #00e6df;
   text-decoration: underline;
-  font-size: 25px;
 }
 
 /* line 102, src/assets/scss/style.scss */
-section {
-  padding: 20px;
-  width: 100%;
-  height: 100vh;
-}
-
-/* line 106, src/assets/scss/style.scss */
-section h2 {
-  color: #a4ebff;
+.header_nav .nav_links .selected {
+  color: #00e6df;
+  text-decoration: underline;
 }
 
 /* line 109, src/assets/scss/style.scss */
-section p {
-  color: #05163f;
-  font-size: 18px;
-  text-align: justify;
-}
-
-/* line 116, src/assets/scss/style.scss */
 .menu-fixed {
   position: fixed;
-  z-index: 1000;
   top: 0;
+}
+
+/* line 114, src/assets/scss/style.scss */
+section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
