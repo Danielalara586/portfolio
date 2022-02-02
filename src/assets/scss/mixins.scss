@@ -9,7 +9,7 @@
 @mixin customize-text($font-size, $font-color, $margin) {
     font-size: $font-size;
     color: $font-color;
-    margin-bottom: $margin;
+    margin: $margin;
 }
 
 @mixin line($line-width) {
