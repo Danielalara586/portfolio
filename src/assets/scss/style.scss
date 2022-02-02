@@ -96,12 +96,10 @@ a {
             transition: all .5s ease 0s;
         }
         a:hover {
-            color: $hover-background-color;
-            text-decoration: underline;
+            color: $hover-font-color;
         }
         .selected {
-            color: $hover-background-color;
-            text-decoration: underline;
+            color: $hover-font-color;
         }
     }
 }

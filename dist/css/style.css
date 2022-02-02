@@ -1,5 +1,4 @@
 /*------------------------------*/
-/*------------------------------*/
 /* line 4, src/assets/scss/style.scss */
 * {
   border: 0;
@@ -110,7 +109,7 @@ a {
 
 /* line 76, src/assets/scss/style.scss */
 .header_nav {
-  background-color: #071537;
+  background-color: #1C242F;
   height: 100px;
   width: 100vw;
 }
@@ -144,23 +143,21 @@ a {
 
 /* line 98, src/assets/scss/style.scss */
 .header_nav .nav_links a:hover {
-  color: #00e6df;
-  text-decoration: underline;
+  color: #E21B6D;
 }
 
-/* line 102, src/assets/scss/style.scss */
+/* line 101, src/assets/scss/style.scss */
 .header_nav .nav_links .selected {
-  color: #00e6df;
-  text-decoration: underline;
+  color: #E21B6D;
 }
 
-/* line 109, src/assets/scss/style.scss */
+/* line 107, src/assets/scss/style.scss */
 .menu-fixed {
   position: fixed;
   top: 0;
 }
 
-/* line 114, src/assets/scss/style.scss */
+/* line 112, src/assets/scss/style.scss */
 section {
   height: 100vh;
   width: 100vw;
