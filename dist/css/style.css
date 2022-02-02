@@ -15,7 +15,7 @@ html {
 
 /* line 16, src/assets/scss/style.scss */
 section[id] {
-  scroll-margin-top: 90px;
+  scroll-margin-top: 80px;
 }
 
 /* line 20, src/assets/scss/style.scss */
@@ -110,34 +110,23 @@ a {
 /* line 76, src/assets/scss/style.scss */
 .header_nav {
   background-color: #1C242F;
-  height: 100px;
+  height: 80px;
   width: 100vw;
-}
-
-/* line 80, src/assets/scss/style.scss */
-.header_nav .img_logo {
-  position: absolute;
-  padding: 20px 30px;
-}
-
-/* line 83, src/assets/scss/style.scss */
-.header_nav .img_logo img {
-  height: 60px;
 }
 
 /* line 87, src/assets/scss/style.scss */
 .header_nav .nav_links {
-  float: right;
-  margin-right: 930px;
+  float: left;
+  margin-left: 30px;
 }
 
 /* line 90, src/assets/scss/style.scss */
 .header_nav .nav_links a {
   display: inline-block;
-  line-height: 110px;
+  line-height: 80px;
   margin: 0 20px;
   color: #fff;
-  font-size: 22px;
+  font-size: 20px;
   transition: all .5s ease 0s;
 }
 
@@ -163,5 +152,53 @@ section {
   width: 100vw;
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding: 20px;
+}
+
+/* line 118, src/assets/scss/style.scss */
+section h2 {
+  display: inline-block;
+  position: relative;
+  color: #1C242F;
+  font-weight: bold;
+}
+
+/* line 127, src/assets/scss/style.scss */
+.about h2::before {
+  content: '';
+  position: absolute;
+  width: 140px;
+  height: 3px;
+  background-color: #1C242F;
+  top: 50px;
+}
+
+/* line 133, src/assets/scss/style.scss */
+.skills h2::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: #1C242F;
+  top: 50px;
+}
+
+/* line 139, src/assets/scss/style.scss */
+.portfolio h2::before {
+  content: '';
+  position: absolute;
+  width: 160px;
+  height: 3px;
+  background-color: #1C242F;
+  top: 50px;
+}
+
+/* line 145, src/assets/scss/style.scss */
+.contact h2::before {
+  content: '';
+  position: absolute;
+  width: 125px;
+  height: 3px;
+  background-color: #1C242F;
+  top: 50px;
 }

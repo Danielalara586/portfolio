@@ -11,3 +11,12 @@
     color: $font-color;
     margin-bottom: $margin;
 }
+
+@mixin line($line-width) {
+    content: '';
+    position: absolute;
+    width: $line-width;
+    height: 3px;
+    background-color: $dark-primary-color;
+    top: 50px;
+}
