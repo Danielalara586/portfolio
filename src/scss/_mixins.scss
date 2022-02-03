@@ -1,9 +1,18 @@
+@mixin box-sizing($sizing) {
+    @each $vendor in ('', '-moz-', '-webkit-') {
+        #{$vendor}box-sizing: $sizing;
+    }
+}
+
+@mixin transform($transform) {
+    @each $vendor in ('', '-moz-', '-webkit-', '-ms-', '-o-') {
+        #{$vendor}transform: $transform;
+    }
+}
+
 @mixin full-screen {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
 }
 
 @mixin customize-text($font-size, $font-color, $margin) {

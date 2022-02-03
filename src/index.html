@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+    <header id="home" class="home">
+        <video autoplay loop>
+            <source src="video/video-intro.mp4" type="video/mp4">
+        </video>
+
+        <div class="home-overlay"></div>
+
+        <div class="home-content">
+            <h1>Welcome!</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium fugiat cumque repellendus ullam non odio.</p>
+            <a class="btn" href="#about">See more!</a>
+        </div>
+    </header>
+    <nav id="menu" class="menu">
+        <div class="menu-links">
+            <a class="selected" href="#home">HOME</a>
+            <a href="#about">ABOUT ME</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#portfolio">PORTFOLIO</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+    </nav>
+    <section id="about" class="about">
+        <h2>About</h2>
+    </section>
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+    </section>
+    <section id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+    </section>
+</body>
+</html>
