@@ -22,6 +22,17 @@ a {
     cursor: pointer;
 }
 
+.btn {
+    @include customize-text(18px, $dark-header-font-color, 20px);
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient( 255deg, $btn-color-1 0%, $btn-color-2 50%, $btn-color-3 100%);
+    padding: 15px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
+}
+
 .header {
     height: 100vh;
     display: flex;
@@ -182,6 +193,10 @@ article {
             color: $dark-font-color;
         }
     }
+    .cv-btn{
+        color: $dark-primary-color;
+
+    }
 }
 
 .icons {
@@ -217,8 +232,12 @@ article {
             opacity: 0;
             text-align: center;
         }
-        h3 {
+        .align {
             margin-top: 65px;
+            color: $dark-header-font-color;
+        }
+        h3{
+            margin-top: 50px;
             color: $dark-header-font-color;
         }
     }
