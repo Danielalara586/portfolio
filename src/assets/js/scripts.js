@@ -1,6 +1,6 @@
 // Sticky menu
 let menu = document.getElementById('nav-menu');
-let height = menu.offsetTop;
+let height = menu.offsetHeight;
 
 window.addEventListener('scroll', function() {
     if (window.pageYOffset > height)
