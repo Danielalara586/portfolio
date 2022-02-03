@@ -272,10 +272,9 @@ article p a {
   overflow: hidden;
   margin: 15px;
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-  cursor: pointer;
 }
 
-/* line 201, src/assets/scss/style.scss */
+/* line 200, src/assets/scss/style.scss */
 .icons figure img {
   object-fit: cover;
   object-position: center;
@@ -285,7 +284,7 @@ article p a {
   transform: all .5s ease-out;
 }
 
-/* line 209, src/assets/scss/style.scss */
+/* line 208, src/assets/scss/style.scss */
 .icons figure .layer {
   position: absolute;
   top: 0;
@@ -298,13 +297,13 @@ article p a {
   text-align: center;
 }
 
-/* line 220, src/assets/scss/style.scss */
+/* line 219, src/assets/scss/style.scss */
 .icons figure h3 {
   margin-top: 65px;
   color: #fff;
 }
 
-/* line 225, src/assets/scss/style.scss */
+/* line 224, src/assets/scss/style.scss */
 .icons figure:hover > .layer {
   opacity: 1;
   visibility: visible;
