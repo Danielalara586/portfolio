@@ -132,12 +132,12 @@ a {
 
 /* line 98, src/assets/scss/style.scss */
 .header_nav .nav_links a:hover {
-  color: #E21B6D;
+  color: #e21b6d;
 }
 
 /* line 101, src/assets/scss/style.scss */
 .header_nav .nav_links .selected {
-  color: #E21B6D;
+  color: #e21b6d;
 }
 
 /* line 107, src/assets/scss/style.scss */
@@ -271,12 +271,41 @@ article p a {
   height: 150px;
   overflow: hidden;
   margin: 15px;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  cursor: pointer;
 }
 
-/* line 199, src/assets/scss/style.scss */
+/* line 201, src/assets/scss/style.scss */
 .icons figure img {
   object-fit: cover;
   object-position: center;
-  width: 110px;
-  height: 110px;
+  width: 100px;
+  height: 100px;
+  margin: 30px 10px;
+  transform: all .5s ease-out;
+}
+
+/* line 209, src/assets/scss/style.scss */
+.icons figure .layer {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(226, 27, 109, 0.7);
+  transition: all .5s ease-out;
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+}
+
+/* line 220, src/assets/scss/style.scss */
+.icons figure h3 {
+  margin-top: 65px;
+  color: #fff;
+}
+
+/* line 225, src/assets/scss/style.scss */
+.icons figure:hover > .layer {
+  opacity: 1;
+  visibility: visible;
 }
