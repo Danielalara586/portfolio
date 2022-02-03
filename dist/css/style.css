@@ -15,7 +15,7 @@ html {
 
 /* line 16, src/assets/scss/style.scss */
 section[id] {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 81px;
 }
 
 /* line 20, src/assets/scss/style.scss */
@@ -112,15 +112,16 @@ a {
   background-color: #1C242F;
   height: 80px;
   width: 100vw;
+  z-index: 1;
 }
 
-/* line 87, src/assets/scss/style.scss */
+/* line 88, src/assets/scss/style.scss */
 .header_nav .nav_links {
   float: left;
   margin-left: 30px;
 }
 
-/* line 90, src/assets/scss/style.scss */
+/* line 91, src/assets/scss/style.scss */
 .header_nav .nav_links a {
   display: inline-block;
   line-height: 80px;
@@ -130,23 +131,23 @@ a {
   transition: all .5s ease 0s;
 }
 
-/* line 98, src/assets/scss/style.scss */
+/* line 99, src/assets/scss/style.scss */
 .header_nav .nav_links a:hover {
   color: #e21b6d;
 }
 
-/* line 101, src/assets/scss/style.scss */
+/* line 102, src/assets/scss/style.scss */
 .header_nav .nav_links .selected {
   color: #e21b6d;
 }
 
-/* line 107, src/assets/scss/style.scss */
+/* line 108, src/assets/scss/style.scss */
 .menu-fixed {
   position: fixed;
   top: 0;
 }
 
-/* line 112, src/assets/scss/style.scss */
+/* line 113, src/assets/scss/style.scss */
 section {
   height: 100vh;
   display: flex;
@@ -156,7 +157,7 @@ section {
   padding: 20px;
 }
 
-/* line 119, src/assets/scss/style.scss */
+/* line 120, src/assets/scss/style.scss */
 section h2 {
   display: inline-block;
   position: relative;
@@ -164,7 +165,7 @@ section h2 {
   font-weight: bold;
 }
 
-/* line 128, src/assets/scss/style.scss */
+/* line 129, src/assets/scss/style.scss */
 .about h2::before {
   content: '';
   position: absolute;
@@ -174,12 +175,12 @@ section h2 {
   top: 50px;
 }
 
-/* line 133, src/assets/scss/style.scss */
+/* line 134, src/assets/scss/style.scss */
 .skills {
   margin-top: 150px;
 }
 
-/* line 134, src/assets/scss/style.scss */
+/* line 135, src/assets/scss/style.scss */
 .skills h2::before {
   content: '';
   position: absolute;
@@ -189,7 +190,7 @@ section h2 {
   top: 50px;
 }
 
-/* line 141, src/assets/scss/style.scss */
+/* line 142, src/assets/scss/style.scss */
 .portfolio h2::before {
   content: '';
   position: absolute;
@@ -199,7 +200,7 @@ section h2 {
   top: 50px;
 }
 
-/* line 147, src/assets/scss/style.scss */
+/* line 148, src/assets/scss/style.scss */
 .contact h2::before {
   content: '';
   position: absolute;
@@ -209,18 +210,18 @@ section h2 {
   top: 50px;
 }
 
-/* line 152, src/assets/scss/style.scss */
+/* line 153, src/assets/scss/style.scss */
 .container {
   min-height: 100vh;
   width: 100%;
 }
 
-/* line 157, src/assets/scss/style.scss */
+/* line 158, src/assets/scss/style.scss */
 .testimonial {
   padding: 30px 100px;
 }
 
-/* line 162, src/assets/scss/style.scss */
+/* line 163, src/assets/scss/style.scss */
 article .profile {
   height: 200px;
   width: 200px;
@@ -232,14 +233,14 @@ article .profile {
   z-index: -1;
 }
 
-/* line 172, src/assets/scss/style.scss */
+/* line 173, src/assets/scss/style.scss */
 article h4 {
   font-size: 23px;
   color: #1C242F;
   margin: 20px;
 }
 
-/* line 175, src/assets/scss/style.scss */
+/* line 176, src/assets/scss/style.scss */
 article p {
   font-size: 20px;
   color: #1C242F;
@@ -249,12 +250,12 @@ article p {
   line-height: 175%;
 }
 
-/* line 180, src/assets/scss/style.scss */
+/* line 181, src/assets/scss/style.scss */
 article p a {
   color: #0AC1C9;
 }
 
-/* line 186, src/assets/scss/style.scss */
+/* line 187, src/assets/scss/style.scss */
 .icons {
   width: 100%;
   display: flex;
@@ -262,7 +263,7 @@ article p a {
   align-items: center;
 }
 
-/* line 191, src/assets/scss/style.scss */
+/* line 192, src/assets/scss/style.scss */
 .icons figure {
   background-color: #08A1A6;
   align-items: center;
@@ -274,7 +275,7 @@ article p a {
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
 
-/* line 200, src/assets/scss/style.scss */
+/* line 201, src/assets/scss/style.scss */
 .icons figure img {
   object-fit: cover;
   object-position: center;
@@ -284,7 +285,7 @@ article p a {
   transform: all .5s ease-out;
 }
 
-/* line 208, src/assets/scss/style.scss */
+/* line 209, src/assets/scss/style.scss */
 .icons figure .layer {
   position: absolute;
   top: 0;
@@ -297,13 +298,13 @@ article p a {
   text-align: center;
 }
 
-/* line 219, src/assets/scss/style.scss */
+/* line 220, src/assets/scss/style.scss */
 .icons figure h3 {
   margin-top: 65px;
   color: #fff;
 }
 
-/* line 224, src/assets/scss/style.scss */
+/* line 225, src/assets/scss/style.scss */
 .icons figure:hover > .layer {
   opacity: 1;
   visibility: visible;
