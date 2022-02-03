@@ -88,19 +88,21 @@ a {
     .nav_links {
         float: left;
         margin-left: 30px;
-        a {
+        li {
             display: inline-block;
             line-height: 80px;
             margin: 0 20px;
-            color: $dark-header-font-color;
-            font-size: 20px;
-            transition: all .5s ease 0s;
-        }
-        a:hover {
-            color: $hover-font-color;
-        }
-        .selected {
-            color: $hover-font-color;
+            a {
+                color: $dark-header-font-color;
+                font-size: 20px;
+                transition: all .5s ease 0s;
+            }
+            a:hover {
+                color: $hover-font-color;
+            }
+            .selected {
+                color: $hover-font-color;
+            }
         }
     }
 }
