@@ -74,18 +74,16 @@ a {
     text-align: center;
 }
 
-.header_nav {
+nav {
     background-color: $dark-primary-color;
     height: 80px;
     width: 100vw;
-    z-index: 1;
-    // .img_logo {
-    //     position: absolute;
-    //     padding: 20px 30px;
-    //     img {
-    //         height: 60px;
-    //     }
-    // }
+    &.menu-fixed {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 10;
+    }
     .nav_links {
         float: left;
         margin-left: 30px;
@@ -104,11 +102,6 @@ a {
             color: $hover-font-color;
         }
     }
-}
-
-.menu-fixed {
-    position: fixed;
-    top: 0;
 }
 
 section {
