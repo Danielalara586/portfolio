@@ -130,13 +130,14 @@ section {
     h2::before {
         @include line(140px);
     }
+    margin-top: 100px;
 }
 
 .skills {
     h2::before {
         @include line(100px);
     }
-    margin-top: 150px;
+    margin-top: 120px;
 }
 
 .portfolio {
@@ -175,7 +176,7 @@ article {
         @include customize-text(23px, $dark-primary-color, 20px)
     }
     .cv-title {
-        margin: 30px;
+        margin: 30px 0 40px;
     }
     p {
         @include customize-text(20px, $dark-primary-color, 20px);
