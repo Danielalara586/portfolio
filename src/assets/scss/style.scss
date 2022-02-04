@@ -174,7 +174,7 @@ article {
     h4 {
         @include customize-text(23px, $dark-primary-color, 20px)
     }
-    .cv-title{
+    .cv-title {
         margin: 30px;
     }
     p {
@@ -186,7 +186,7 @@ article {
             color: $dark-font-color;
         }
     }
-    .cv-btn{
+    .cv-btn {
         @extend .btn;
     }
     .cv-btn:hover {
@@ -232,7 +232,7 @@ article {
             margin-top: 65px;
             color: $dark-header-font-color;
         }
-        h3{
+        h3 {
             margin-top: 50px;
             color: $dark-header-font-color;
         }
