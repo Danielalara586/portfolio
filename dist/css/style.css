@@ -25,7 +25,7 @@ a {
 }
 
 /* line 25, src/assets/scss/style.scss */
-.btn, article .cv-btn {
+.btn, .about-article .cv-btn {
   font-size: 18px;
   color: #fff;
   margin: 20px;
@@ -93,7 +93,7 @@ a {
 }
 
 /* line 62, src/assets/scss/style.scss */
-.header-content .btn:hover, .header-content article .cv-btn:hover, article .header-content .cv-btn:hover {
+.header-content .btn:hover, .header-content .about-article .cv-btn:hover, .about-article .header-content .cv-btn:hover {
   box-shadow: 0 0 20px rgba(180, 246, 255, 0.77);
   font-size: 23px;
 }
@@ -223,7 +223,7 @@ section h2 {
 }
 
 /* line 157, src/assets/scss/style.scss */
-article .profile {
+.about-article .profile {
   height: 200px;
   width: 200px;
   border: 3px solid #08A1A6;
@@ -235,19 +235,19 @@ article .profile {
 }
 
 /* line 167, src/assets/scss/style.scss */
-article h4 {
+.about-article h4 {
   font-size: 23px;
   color: #1C242F;
   margin: 20px;
 }
 
 /* line 170, src/assets/scss/style.scss */
-article .cv-title {
+.about-article .cv-title {
   margin: 30px 0 40px;
 }
 
 /* line 173, src/assets/scss/style.scss */
-article p {
+.about-article p {
   font-size: 20px;
   color: #1C242F;
   margin: 20px;
@@ -257,12 +257,12 @@ article p {
 }
 
 /* line 178, src/assets/scss/style.scss */
-article p a {
+.about-article p a {
   color: #0AC1C9;
 }
 
 /* line 185, src/assets/scss/style.scss */
-article .cv-btn:hover {
+.about-article .cv-btn:hover {
   box-shadow: 0 0 20px rgba(0, 90, 207, 0.75);
   font-size: 23px;
 }
