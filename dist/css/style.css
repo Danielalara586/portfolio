@@ -166,11 +166,6 @@ section h2 {
   font-weight: bold;
 }
 
-/* line 122, src/assets/scss/style.scss */
-.about {
-  margin-top: 100px;
-}
-
 /* line 123, src/assets/scss/style.scss */
 .about h2::before {
   content: '';
@@ -181,12 +176,12 @@ section h2 {
   top: 50px;
 }
 
-/* line 129, src/assets/scss/style.scss */
+/* line 128, src/assets/scss/style.scss */
 .skills {
   margin-top: 120px;
 }
 
-/* line 130, src/assets/scss/style.scss */
+/* line 129, src/assets/scss/style.scss */
 .skills h2::before {
   content: '';
   position: absolute;
@@ -196,7 +191,7 @@ section h2 {
   top: 50px;
 }
 
-/* line 137, src/assets/scss/style.scss */
+/* line 136, src/assets/scss/style.scss */
 .portfolio h2::before {
   content: '';
   position: absolute;
@@ -206,7 +201,7 @@ section h2 {
   top: 50px;
 }
 
-/* line 143, src/assets/scss/style.scss */
+/* line 142, src/assets/scss/style.scss */
 .contact h2::before {
   content: '';
   position: absolute;
@@ -216,18 +211,18 @@ section h2 {
   top: 50px;
 }
 
-/* line 148, src/assets/scss/style.scss */
+/* line 147, src/assets/scss/style.scss */
 .container {
   min-height: 100vh;
   width: 100%;
 }
 
-/* line 153, src/assets/scss/style.scss */
+/* line 152, src/assets/scss/style.scss */
 .testimonial {
   padding: 30px 100px;
 }
 
-/* line 158, src/assets/scss/style.scss */
+/* line 157, src/assets/scss/style.scss */
 article .profile {
   height: 200px;
   width: 200px;
@@ -239,19 +234,19 @@ article .profile {
   z-index: -1;
 }
 
-/* line 168, src/assets/scss/style.scss */
+/* line 167, src/assets/scss/style.scss */
 article h4 {
   font-size: 23px;
   color: #1C242F;
   margin: 20px;
 }
 
-/* line 171, src/assets/scss/style.scss */
+/* line 170, src/assets/scss/style.scss */
 article .cv-title {
   margin: 30px 0 40px;
 }
 
-/* line 174, src/assets/scss/style.scss */
+/* line 173, src/assets/scss/style.scss */
 article p {
   font-size: 20px;
   color: #1C242F;
@@ -261,18 +256,18 @@ article p {
   line-height: 175%;
 }
 
-/* line 179, src/assets/scss/style.scss */
+/* line 178, src/assets/scss/style.scss */
 article p a {
   color: #0AC1C9;
 }
 
-/* line 186, src/assets/scss/style.scss */
+/* line 185, src/assets/scss/style.scss */
 article .cv-btn:hover {
   box-shadow: 0 0 20px rgba(0, 90, 207, 0.75);
   font-size: 23px;
 }
 
-/* line 192, src/assets/scss/style.scss */
+/* line 191, src/assets/scss/style.scss */
 .icons {
   width: 100%;
   display: flex;
@@ -280,7 +275,7 @@ article .cv-btn:hover {
   align-items: center;
 }
 
-/* line 197, src/assets/scss/style.scss */
+/* line 196, src/assets/scss/style.scss */
 .icons figure {
   background-color: #08A1A6;
   align-items: center;
@@ -292,7 +287,7 @@ article .cv-btn:hover {
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
 
-/* line 206, src/assets/scss/style.scss */
+/* line 205, src/assets/scss/style.scss */
 .icons figure img {
   object-fit: cover;
   object-position: center;
@@ -302,7 +297,7 @@ article .cv-btn:hover {
   transform: all .5s ease-out;
 }
 
-/* line 214, src/assets/scss/style.scss */
+/* line 213, src/assets/scss/style.scss */
 .icons figure .layer {
   position: absolute;
   top: 0;
@@ -315,19 +310,19 @@ article .cv-btn:hover {
   text-align: center;
 }
 
-/* line 225, src/assets/scss/style.scss */
+/* line 224, src/assets/scss/style.scss */
 .icons figure .align {
   margin-top: 65px;
   color: #fff;
 }
 
-/* line 229, src/assets/scss/style.scss */
+/* line 228, src/assets/scss/style.scss */
 .icons figure h3 {
   margin-top: 50px;
   color: #fff;
 }
 
-/* line 234, src/assets/scss/style.scss */
+/* line 233, src/assets/scss/style.scss */
 .icons figure:hover > .layer {
   opacity: 1;
   visibility: visible;
