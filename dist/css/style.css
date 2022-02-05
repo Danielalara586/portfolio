@@ -25,7 +25,7 @@ a {
 }
 
 /* line 25, src/assets/scss/style.scss */
-.btn, .about-article .cv-btn {
+.btn, .about article .cv-btn {
   font-size: 18px;
   color: #fff;
   margin: 20px;
@@ -93,7 +93,7 @@ a {
 }
 
 /* line 62, src/assets/scss/style.scss */
-.header-content .btn:hover, .header-content .about-article .cv-btn:hover, .about-article .header-content .cv-btn:hover {
+.header-content .btn:hover, .header-content .about article .cv-btn:hover, .about article .header-content .cv-btn:hover {
   box-shadow: 0 0 20px rgba(180, 246, 255, 0.77);
   font-size: 23px;
 }
@@ -176,54 +176,8 @@ section h2 {
   top: 50px;
 }
 
-/* line 128, src/assets/scss/style.scss */
-.skills {
-  margin-top: 120px;
-}
-
-/* line 129, src/assets/scss/style.scss */
-.skills h2::before {
-  content: '';
-  position: absolute;
-  width: 100px;
-  height: 3px;
-  background-color: #1C242F;
-  top: 50px;
-}
-
-/* line 136, src/assets/scss/style.scss */
-.portfolio h2::before {
-  content: '';
-  position: absolute;
-  width: 160px;
-  height: 3px;
-  background-color: #1C242F;
-  top: 50px;
-}
-
-/* line 142, src/assets/scss/style.scss */
-.contact h2::before {
-  content: '';
-  position: absolute;
-  width: 125px;
-  height: 3px;
-  background-color: #1C242F;
-  top: 50px;
-}
-
-/* line 147, src/assets/scss/style.scss */
-.container {
-  min-height: 100vh;
-  width: 100%;
-}
-
-/* line 152, src/assets/scss/style.scss */
-.testimonial {
-  padding: 30px 100px;
-}
-
-/* line 157, src/assets/scss/style.scss */
-.about-article .profile {
+/* line 127, src/assets/scss/style.scss */
+.about article .profile {
   height: 200px;
   width: 200px;
   border: 3px solid #08A1A6;
@@ -234,20 +188,20 @@ section h2 {
   z-index: -1;
 }
 
-/* line 167, src/assets/scss/style.scss */
-.about-article h4 {
+/* line 137, src/assets/scss/style.scss */
+.about article h4 {
   font-size: 23px;
   color: #1C242F;
   margin: 20px;
 }
 
-/* line 170, src/assets/scss/style.scss */
-.about-article .cv-title {
+/* line 140, src/assets/scss/style.scss */
+.about article .cv-title {
   margin: 30px 0 40px;
 }
 
-/* line 173, src/assets/scss/style.scss */
-.about-article p {
+/* line 143, src/assets/scss/style.scss */
+.about article p {
   font-size: 20px;
   color: #1C242F;
   margin: 20px;
@@ -256,27 +210,33 @@ section h2 {
   line-height: 175%;
 }
 
-/* line 178, src/assets/scss/style.scss */
-.about-article p a {
+/* line 148, src/assets/scss/style.scss */
+.about article p a {
   color: #0AC1C9;
+  transition: .3s ease;
 }
 
-/* line 185, src/assets/scss/style.scss */
-.about-article .cv-btn:hover {
+/* line 152, src/assets/scss/style.scss */
+.about article p a:hover {
+  color: #e21b6d;
+}
+
+/* line 159, src/assets/scss/style.scss */
+.about article .cv-btn:hover {
   box-shadow: 0 0 20px rgba(0, 90, 207, 0.75);
   font-size: 23px;
 }
 
-/* line 191, src/assets/scss/style.scss */
-.icons {
+/* line 164, src/assets/scss/style.scss */
+.about .icons {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* line 196, src/assets/scss/style.scss */
-.icons figure {
+/* line 169, src/assets/scss/style.scss */
+.about .icons figure {
   background-color: #08A1A6;
   align-items: center;
   position: relative;
@@ -287,8 +247,8 @@ section h2 {
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
 
-/* line 205, src/assets/scss/style.scss */
-.icons figure img {
+/* line 178, src/assets/scss/style.scss */
+.about .icons figure img {
   object-fit: cover;
   object-position: center;
   width: 100px;
@@ -297,8 +257,8 @@ section h2 {
   transform: all .5s ease-out;
 }
 
-/* line 213, src/assets/scss/style.scss */
-.icons figure .layer {
+/* line 186, src/assets/scss/style.scss */
+.about .icons figure .layer {
   position: absolute;
   top: 0;
   width: 100%;
@@ -310,20 +270,81 @@ section h2 {
   text-align: center;
 }
 
-/* line 224, src/assets/scss/style.scss */
-.icons figure .align {
+/* line 197, src/assets/scss/style.scss */
+.about .icons figure .align {
   margin-top: 65px;
   color: #fff;
 }
 
-/* line 228, src/assets/scss/style.scss */
-.icons figure h3 {
+/* line 201, src/assets/scss/style.scss */
+.about .icons figure h3 {
   margin-top: 50px;
   color: #fff;
 }
 
-/* line 233, src/assets/scss/style.scss */
-.icons figure:hover > .layer {
+/* line 206, src/assets/scss/style.scss */
+.about .icons figure:hover > .layer {
   opacity: 1;
   visibility: visible;
+}
+
+/* line 213, src/assets/scss/style.scss */
+.skills {
+  margin: 120px;
+}
+
+/* line 214, src/assets/scss/style.scss */
+.skills h2::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: #1C242F;
+  top: 50px;
+}
+
+/* line 218, src/assets/scss/style.scss */
+.skills .skill-container {
+  position: absolute;
+  width: 35%;
+  margin-top: 80px;
+  padding: 0 20px;
+  border: 2px solid green;
+}
+
+/* line 224, src/assets/scss/style.scss */
+.skills .skill-container p {
+  text-align: left;
+  margin-top: 15px;
+}
+
+/* line 232, src/assets/scss/style.scss */
+.portfolio h2::before {
+  content: '';
+  position: absolute;
+  width: 160px;
+  height: 3px;
+  background-color: #1C242F;
+  top: 50px;
+}
+
+/* line 238, src/assets/scss/style.scss */
+.contact h2::before {
+  content: '';
+  position: absolute;
+  width: 125px;
+  height: 3px;
+  background-color: #1C242F;
+  top: 50px;
+}
+
+/* line 243, src/assets/scss/style.scss */
+.container {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* line 248, src/assets/scss/style.scss */
+.testimonial {
+  padding: 30px 100px;
 }
