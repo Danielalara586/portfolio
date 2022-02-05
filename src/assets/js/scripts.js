@@ -1,34 +1,38 @@
-// Sticky menu
+// Variable init
+const sections = document.querySelectorAll('section');
+const navigation = document.querySelectorAll('.nav_links a[href^="#"]');
 let menu = document.getElementById('nav-menu');
-let height = menu.offsetTop;
+let height = document.querySelector('header').offsetHeight - 150;
 
-window.addEventListener('scroll', function() {
-    if (window.pageYOffset > height)
-        menu.classList.add('menu-fixed');
-    else
-        menu.classList.remove('menu-fixed');
+// Loader
+window.addEventListener('load', () => {
+    menu.style.opacity = '0';
+
 })
 
-// Section observer
-const menuLinks = document.querySelectorAll('.nav_links a[href^="#"]');
+window.addEventListener('scroll', () => {
+    const currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+    // Dynamic Menu
+    if (window.pageYOffset > height)
+        menu.style = 'opacity: 1; transition: .5s ease-in';
+    else
+        menu.style.opacity = '0';
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        const id = entry.target.getAttribute('id');
-        const menuLink = document.querySelector(`.nav_links a[href="#${id}"]`)
+    let sectionId = null;
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
 
-        if (entry.isIntersecting) {
-            document.querySelector('.nav_links a.selected').classList.remove('selected');
-            menuLink.classList.add('selected');
-        }
-
+        if (currentScroll >= sectionTop - sectionHeight / 3)
+            sectionId = section.getAttribute('id');
 
     });
-}, { rootMargin: '-50% 0px -50% 0px' });
 
-menuLinks.forEach(menuLink => {
-    const hash = menuLink.getAttribute("href");
-    const target = document.querySelector(hash);
-    if (target)
-        observer.observe(target);
-})
+    navigation.forEach(option => {
+        option.classList.remove('selected');
+
+        if (option.getAttribute('href') === `#${sectionId}`) {
+            option.classList.add('selected');
+        }
+    });
+});
