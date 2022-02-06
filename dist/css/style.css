@@ -112,9 +112,10 @@ nav {
   background-color: #1C242F;
   height: 80px;
   width: 100vw;
+  border-bottom: 3px solid #0AC1C9;
 }
 
-/* line 81, src/assets/scss/style.scss */
+/* line 82, src/assets/scss/style.scss */
 nav.menu-fixed {
   position: fixed;
   left: 0;
@@ -122,13 +123,13 @@ nav.menu-fixed {
   z-index: 10;
 }
 
-/* line 87, src/assets/scss/style.scss */
+/* line 88, src/assets/scss/style.scss */
 nav .nav_links {
   float: left;
   margin-left: 30px;
 }
 
-/* line 90, src/assets/scss/style.scss */
+/* line 91, src/assets/scss/style.scss */
 nav .nav_links a {
   display: inline-block;
   line-height: 80px;
@@ -138,17 +139,17 @@ nav .nav_links a {
   transition: all .5s ease 0s;
 }
 
-/* line 98, src/assets/scss/style.scss */
+/* line 99, src/assets/scss/style.scss */
 nav .nav_links a:hover {
   color: #e21b6d;
 }
 
-/* line 101, src/assets/scss/style.scss */
+/* line 102, src/assets/scss/style.scss */
 nav .nav_links .selected {
   color: #e21b6d;
 }
 
-/* line 107, src/assets/scss/style.scss */
+/* line 108, src/assets/scss/style.scss */
 section {
   height: 100vh;
   display: flex;
@@ -158,7 +159,7 @@ section {
   padding: 20px;
 }
 
-/* line 114, src/assets/scss/style.scss */
+/* line 115, src/assets/scss/style.scss */
 section h2 {
   display: inline-block;
   position: relative;
@@ -166,7 +167,7 @@ section h2 {
   font-weight: bold;
 }
 
-/* line 123, src/assets/scss/style.scss */
+/* line 124, src/assets/scss/style.scss */
 .about h2::before {
   content: '';
   position: absolute;
@@ -176,7 +177,7 @@ section h2 {
   top: 50px;
 }
 
-/* line 127, src/assets/scss/style.scss */
+/* line 128, src/assets/scss/style.scss */
 .about article .profile {
   height: 200px;
   width: 200px;
@@ -188,19 +189,19 @@ section h2 {
   z-index: -1;
 }
 
-/* line 137, src/assets/scss/style.scss */
+/* line 138, src/assets/scss/style.scss */
 .about article h4 {
   font-size: 23px;
   color: #1C242F;
   margin: 20px;
 }
 
-/* line 140, src/assets/scss/style.scss */
+/* line 141, src/assets/scss/style.scss */
 .about article .cv-title {
   margin: 30px 0 40px;
 }
 
-/* line 143, src/assets/scss/style.scss */
+/* line 144, src/assets/scss/style.scss */
 .about article p {
   font-size: 20px;
   color: #1C242F;
@@ -210,24 +211,24 @@ section h2 {
   line-height: 175%;
 }
 
-/* line 148, src/assets/scss/style.scss */
+/* line 149, src/assets/scss/style.scss */
 .about article p a {
   color: #0AC1C9;
   transition: .3s ease;
 }
 
-/* line 152, src/assets/scss/style.scss */
+/* line 153, src/assets/scss/style.scss */
 .about article p a:hover {
   color: #e21b6d;
 }
 
-/* line 159, src/assets/scss/style.scss */
+/* line 160, src/assets/scss/style.scss */
 .about article .cv-btn:hover {
   box-shadow: 0 0 20px rgba(0, 90, 207, 0.75);
   font-size: 23px;
 }
 
-/* line 164, src/assets/scss/style.scss */
+/* line 165, src/assets/scss/style.scss */
 .about .icons {
   width: 100%;
   display: flex;
@@ -235,7 +236,7 @@ section h2 {
   align-items: center;
 }
 
-/* line 169, src/assets/scss/style.scss */
+/* line 170, src/assets/scss/style.scss */
 .about .icons figure {
   background-color: #08A1A6;
   align-items: center;
@@ -247,7 +248,7 @@ section h2 {
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
 
-/* line 178, src/assets/scss/style.scss */
+/* line 179, src/assets/scss/style.scss */
 .about .icons figure img {
   object-fit: cover;
   object-position: center;
@@ -257,7 +258,7 @@ section h2 {
   transform: all .5s ease-out;
 }
 
-/* line 186, src/assets/scss/style.scss */
+/* line 187, src/assets/scss/style.scss */
 .about .icons figure .layer {
   position: absolute;
   top: 0;
@@ -270,30 +271,41 @@ section h2 {
   text-align: center;
 }
 
-/* line 197, src/assets/scss/style.scss */
+/* line 198, src/assets/scss/style.scss */
 .about .icons figure .align {
   margin-top: 65px;
   color: #fff;
 }
 
-/* line 201, src/assets/scss/style.scss */
+/* line 202, src/assets/scss/style.scss */
 .about .icons figure h3 {
   margin-top: 50px;
   color: #fff;
 }
 
-/* line 206, src/assets/scss/style.scss */
+/* line 207, src/assets/scss/style.scss */
 .about .icons figure:hover > .layer {
   opacity: 1;
   visibility: visible;
 }
 
-/* line 213, src/assets/scss/style.scss */
+/* line 212, src/assets/scss/style.scss */
+.about .container {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* line 216, src/assets/scss/style.scss */
+.about .testimonial {
+  padding: 30px 100px;
+}
+
+/* line 221, src/assets/scss/style.scss */
 .skills {
   margin: 120px;
 }
 
-/* line 214, src/assets/scss/style.scss */
+/* line 222, src/assets/scss/style.scss */
 .skills h2::before {
   content: '';
   position: absolute;
@@ -303,31 +315,40 @@ section h2 {
   top: 50px;
 }
 
-/* line 218, src/assets/scss/style.scss */
+/* line 226, src/assets/scss/style.scss */
 .skills .skill-container {
   position: absolute;
   width: 40%;
   margin-top: 80px;
-  border: 2px solid green;
 }
 
-/* line 224, src/assets/scss/style.scss */
+/* line 232, src/assets/scss/style.scss */
 .skills .skill-container .skill p {
   text-align: left;
-  margin: 10px;
+  margin: 13px;
   font-size: 23px;
 }
 
-/* line 229, src/assets/scss/style.scss */
+/* line 237, src/assets/scss/style.scss */
 .skills .skill-container .skill-bar {
-  height: 25px;
-  background-color: #c9c9c9;
+  height: 22px;
+  background-color: #c1c1c1;
   border-radius: 10px;
-  margin: 13px;
   color: #636363;
+  margin: 13px;
 }
 
-/* line 241, src/assets/scss/style.scss */
+/* line 240, src/assets/scss/style.scss */
+.skills .skill-container .skill-bar div {
+  height: 22px;
+  background-color: #c1c1c1;
+  border-radius: 10px;
+  color: #636363;
+  padding-left: 5px;
+  width: 0;
+}
+
+/* line 251, src/assets/scss/style.scss */
 .portfolio h2::before {
   content: '';
   position: absolute;
@@ -337,7 +358,7 @@ section h2 {
   top: 50px;
 }
 
-/* line 247, src/assets/scss/style.scss */
+/* line 257, src/assets/scss/style.scss */
 .contact h2::before {
   content: '';
   position: absolute;
@@ -345,15 +366,4 @@ section h2 {
   height: 3px;
   background-color: #1C242F;
   top: 50px;
-}
-
-/* line 252, src/assets/scss/style.scss */
-.container {
-  min-height: 100vh;
-  width: 100%;
-}
-
-/* line 257, src/assets/scss/style.scss */
-.testimonial {
-  padding: 30px 100px;
 }
