@@ -20,3 +20,10 @@
     background-color: $dark-primary-color;
     top: 50px;
 }
+
+@mixin skill-bar ($color) {
+    height: 22px;
+    background-color: $color;
+    border-radius: 10px;
+    color: $bar-font-color;
+}
