@@ -225,18 +225,18 @@ section {
     margin: 120px;
     .skill-container {
         position: absolute;
-        width: 40%;
+        width: 50%;
         margin-top: 80px;
-        // border: 2px solid green;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
         .skill {
             p {
                 text-align: left;
-                margin: 13px;
+                margin: 12px 100px;
                 font-size: 23px;
             }
             &-bar {
                 @include skill-bar($bar-background-color);
-                margin: 13px;
+                margin: 12px 100px;
                 div {
                     @include skill-bar($bar-background-color);
                     padding-left: 5px;
