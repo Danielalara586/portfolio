@@ -337,9 +337,10 @@ section h2 {
   border-radius: 10px;
   color: #636363;
   margin: 12px 100px;
+  box-shadow: 5px 2px 5px 2px rgba(0, 0, 0, 0.5);
 }
 
-/* line 240, src/assets/scss/style.scss */
+/* line 241, src/assets/scss/style.scss */
 .skills .skill-container .skill-bar div {
   height: 22px;
   background-color: #c1c1c1;
@@ -349,7 +350,7 @@ section h2 {
   width: 0;
 }
 
-/* line 251, src/assets/scss/style.scss */
+/* line 252, src/assets/scss/style.scss */
 .portfolio h2::before {
   content: '';
   position: absolute;
@@ -359,7 +360,7 @@ section h2 {
   top: 50px;
 }
 
-/* line 257, src/assets/scss/style.scss */
+/* line 258, src/assets/scss/style.scss */
 .contact h2::before {
   content: '';
   position: absolute;
