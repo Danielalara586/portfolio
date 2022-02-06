@@ -306,19 +306,28 @@ section h2 {
 /* line 218, src/assets/scss/style.scss */
 .skills .skill-container {
   position: absolute;
-  width: 35%;
+  width: 40%;
   margin-top: 80px;
-  padding: 0 20px;
   border: 2px solid green;
 }
 
 /* line 224, src/assets/scss/style.scss */
-.skills .skill-container p {
+.skills .skill-container .skill p {
   text-align: left;
-  margin-top: 15px;
+  margin: 10px;
+  font-size: 23px;
 }
 
-/* line 232, src/assets/scss/style.scss */
+/* line 229, src/assets/scss/style.scss */
+.skills .skill-container .skill-bar {
+  height: 25px;
+  background-color: #c9c9c9;
+  border-radius: 10px;
+  margin: 13px;
+  color: #636363;
+}
+
+/* line 241, src/assets/scss/style.scss */
 .portfolio h2::before {
   content: '';
   position: absolute;
@@ -328,7 +337,7 @@ section h2 {
   top: 50px;
 }
 
-/* line 238, src/assets/scss/style.scss */
+/* line 247, src/assets/scss/style.scss */
 .contact h2::before {
   content: '';
   position: absolute;
@@ -338,13 +347,13 @@ section h2 {
   top: 50px;
 }
 
-/* line 243, src/assets/scss/style.scss */
+/* line 252, src/assets/scss/style.scss */
 .container {
   min-height: 100vh;
   width: 100%;
 }
 
-/* line 248, src/assets/scss/style.scss */
+/* line 257, src/assets/scss/style.scss */
 .testimonial {
   padding: 30px 100px;
 }

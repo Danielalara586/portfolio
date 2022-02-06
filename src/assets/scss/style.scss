@@ -217,13 +217,22 @@ section {
     margin: 120px;
     .skill-container {
         position: absolute;
-        width: 35%;
+        width: 40%;
         margin-top: 80px;
-        padding: 0 20px;
         border: 2px solid green;
-        p {
-            text-align: left;
-            margin-top: 15px;
+        .skill {
+            p {
+                text-align: left;
+                margin: 10px;
+                font-size: 23px;
+            }
+            &-bar {
+                height: 25px;
+                background-color: $bar-background-color;
+                border-radius: 10px;
+                margin: 13px;
+                color: $bar-font-color;
+            }
         }
     }
 }
