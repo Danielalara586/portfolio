@@ -37,6 +37,7 @@ a {
     height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
     &-video {
         @include full-screen;
         overflow: hidden;
@@ -57,7 +58,11 @@ a {
             @include customize-text(50px, $dark-header-font-color, 20px);
         }
         p {
-            @include customize-text(22.5px, $dark-header-font-color, 50px);
+            @include customize-text(27.5px, $dark-header-font-color, 50px);
+            line-height: 175%;
+            strong {
+                color: $dark-font-color;
+            }
         }
         .btn:hover {
             box-shadow: 0 0 20px rgba(180, 246, 255, 0.77);
