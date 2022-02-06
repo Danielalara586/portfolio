@@ -47,13 +47,13 @@ skillBars.forEach(skillBar => {
     let bar = skillBar.querySelector('.skill-bar_percent');
     let percent = skillBar.querySelector('.percent');
     skillBar.onmouseover = function() {
-        percent.style = 'width: 100%; color: #fff; transition: 1s; background: #0AC1C9';
+        percent.style = 'width: 100%; color: #fff; transition: .8s; background: #0AC1C9';
         bar.style.background = '#0AC1C9';
-        bar.style.transition = '1s';
+        bar.style.transition = '.8s';
     }
     skillBar.onmouseout = function() {
-        percent.style = 'width: 0%; transition: 1s';
+        percent.style = 'width: 0%; transition: .8s';
         bar.style.background = '#c1c1c1';
-        bar.style.transition = '1s';
+        bar.style.transition = '.8s';
     }
 });
