@@ -12,12 +12,12 @@
     margin: $margin;
 }
 
-@mixin line($line-width) {
+@mixin line($line-width, $line-color) {
     content: '';
     position: absolute;
     width: $line-width;
     height: 3px;
-    background-color: $dark-primary-color;
+    background-color: $line-color;
     top: 50px;
 }
 
