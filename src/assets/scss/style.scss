@@ -127,7 +127,7 @@ section {
 
 .about {
     h2::before {
-        @include line(140px);
+        @include line(140px, $dark-primary-color);
     }
     article {
         .profile {
@@ -225,7 +225,7 @@ section {
 
 .skills {
     h2::before {
-        @include line(100px);
+        @include line(100px, $dark-primary-color);
     }
     margin: 120px;
     .skill-container {
@@ -255,12 +255,17 @@ section {
 
 .portfolio {
     h2::before {
-        @include line(160px);
+        @include line(160px, $dark-primary-color);
     }
 }
 
 .contact {
+    background-color: $dark-primary-color;
+    h2 {
+        margin-top: 100px;
+        color: $dark-header-font-color;
+    }
     h2::before {
-        @include line(125px);
+        @include line(125px, $dark-header-font-color);
     }
 }

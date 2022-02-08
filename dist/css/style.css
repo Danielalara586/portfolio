@@ -367,12 +367,23 @@ section h2 {
   top: 50px;
 }
 
-/* line 263, src/assets/scss/style.scss */
+/* line 262, src/assets/scss/style.scss */
+.contact {
+  background-color: #1C242F;
+}
+
+/* line 264, src/assets/scss/style.scss */
+.contact h2 {
+  margin-top: 100px;
+  color: #fff;
+}
+
+/* line 268, src/assets/scss/style.scss */
 .contact h2::before {
   content: '';
   position: absolute;
   width: 125px;
   height: 3px;
-  background-color: #1C242F;
+  background-color: #fff;
   top: 50px;
 }
