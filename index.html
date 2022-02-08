@@ -184,13 +184,26 @@
 
     <section class="portfolio" id="portfolio">
         <h2>PORTFOLIO</h2>
+        <div class="portfolio-container">
+            <div class="triangle"></div>
+        </div>
+
     </section>
 
     <section class="contact" id="contact">
         <h2>CONTACT</h2>
-        <div class="triangle"></div>
+        <div class="contact-container">
+            <p>Let's work together!</p>
+            <form onsubmit="sendEmail(); reset()">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="text" id="email" placeholder="Email" required>
+                <textarea id="message" rows="10" placeholder="How can I help?"></textarea>
+                <button type="submit">SUBMIT</button>
+            </form>
+        </div>
     </section>
     <script src="./src/assets/js/scripts.js "></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 
 </html>
