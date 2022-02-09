@@ -377,46 +377,6 @@ section h2 {
 }
 
 /* line 266, src/assets/scss/style.scss */
-.portfolio-container .filter {
-  display: inline-block;
-  margin: 10px 20px;
-  padding: 5px 30px;
-  color: #636363;
-  cursor: pointer;
-}
-
-/* line 273, src/assets/scss/style.scss */
-.portfolio-container .active {
-  background-color: #e21b6d;
-  color: #fff;
-}
-
-/* line 277, src/assets/scss/style.scss */
-.portfolio-container .gallery {
-  position: absolute;
-  background-color: #000;
-  margin-top: 150px;
-  width: 150%;
-  height: 60px;
-}
-
-/* line 283, src/assets/scss/style.scss */
-.portfolio-container .gallery .item {
-  position: absolute;
-}
-
-/* line 285, src/assets/scss/style.scss */
-.portfolio-container .gallery .item .inner {
-  position: relative;
-}
-
-/* line 287, src/assets/scss/style.scss */
-.portfolio-container .gallery .item .inner img {
-  width: 100%;
-  display: block;
-}
-
-/* line 294, src/assets/scss/style.scss */
 .portfolio-container .triangle {
   position: absolute;
   width: 0;
@@ -424,21 +384,21 @@ section h2 {
   border-style: solid;
   border-width: 50px 250px 0 250px;
   border-color: #fff transparent transparent transparent;
-  margin-top: 1500px;
+  margin-top: 1600px;
 }
 
-/* line 306, src/assets/scss/style.scss */
+/* line 278, src/assets/scss/style.scss */
 .contact {
   background-color: #2c2e39;
 }
 
-/* line 308, src/assets/scss/style.scss */
+/* line 280, src/assets/scss/style.scss */
 .contact h2 {
   margin-top: 70px;
   color: #fff;
 }
 
-/* line 312, src/assets/scss/style.scss */
+/* line 284, src/assets/scss/style.scss */
 .contact h2::before {
   content: '';
   position: absolute;
@@ -448,7 +408,7 @@ section h2 {
   top: 50px;
 }
 
-/* line 315, src/assets/scss/style.scss */
+/* line 287, src/assets/scss/style.scss */
 .contact-container {
   position: absolute;
   width: 60%;
@@ -456,14 +416,14 @@ section h2 {
   margin-top: 150px;
 }
 
-/* line 320, src/assets/scss/style.scss */
+/* line 292, src/assets/scss/style.scss */
 .contact-container p {
   margin: 10px auto;
   color: #0AC1C9;
   font-size: 18px;
 }
 
-/* line 325, src/assets/scss/style.scss */
+/* line 297, src/assets/scss/style.scss */
 .contact-container form {
   display: flex;
   flex-direction: column;
@@ -471,7 +431,7 @@ section h2 {
   margin: 35px auto;
 }
 
-/* line 330, src/assets/scss/style.scss */
+/* line 302, src/assets/scss/style.scss */
 .contact-container form input,
 .contact-container form textarea {
   padding: 7.5px;
@@ -480,7 +440,7 @@ section h2 {
   color: #fff;
 }
 
-/* line 337, src/assets/scss/style.scss */
+/* line 309, src/assets/scss/style.scss */
 .contact-container form button {
   padding: 10px;
   background-color: #1E242C;
@@ -492,7 +452,7 @@ section h2 {
   transition: .3s ease;
 }
 
-/* line 346, src/assets/scss/style.scss */
+/* line 318, src/assets/scss/style.scss */
 .contact-container form button:hover {
   background-color: #0AC1C9;
   box-shadow: 0 0 20px rgba(180, 246, 255, 0.77);
