@@ -262,7 +262,7 @@ section {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 180px;
+        margin: 120px;
         .triangle {
             position: absolute;
             width: 0;
@@ -274,18 +274,30 @@ section {
         }
         .carousel {
             overflow: hidden;
-            max-width: 600px;
+            max-width: 700px;
             position: relative;
             &-items,
             .hidden {
                 display: none;
             }
             &-items img {
-                width: 100%;
-                max-width: 600px;
-                height: auto;
+                width: 700px;
+                height: 450px;
                 object-fit: cover;
-                border: 1px solid $dark-primary-color;
+            }
+            .portfolio-btn {
+                position: relative;
+                background-color: $dark-font-color;
+                color: $dark-header-font-color;
+                border-radius: 50px;
+                padding: 10px;
+                margin: 10px 20px;
+                display: inline-block;
+                transition: .3s ease;
+                &:hover {
+                    background-color: $hover-font-color;
+                    font-size: 18.5px;
+                }
             }
             .visible {
                 display: block;
@@ -305,6 +317,12 @@ section {
                     width: 35px;
                     height: 35px;
                     margin: 0 15px;
+                    color: $dark-primary-color;
+                    transition: .3s ease;
+                    &:hover {
+                        color: $dark-header-font-color;
+                        background-color: $dark-font-color;
+                    }
                 }
             }
         }
