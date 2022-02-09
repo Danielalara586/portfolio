@@ -259,22 +259,54 @@ section {
     }
     &-container {
         position: absolute;
-        // .triangle {
-        //     position: relative;
-        //     width: 0;
-        //     height: 0;
-        //     border-style: solid;
-        //     border-width: 100px 125px 0 125px;
-        //     border-color: $dark-primary-color transparent transparent transparent;
-        //     display: inline;
-        // }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 80px;
+        .filter {
+            display: inline-block;
+            margin: 10px 20px;
+            padding: 5px 30px;
+            color: $bar-font-color;
+            cursor: pointer;
+        }
+        .active {
+            background-color: $hover-font-color;
+            color: $dark-header-font-color;
+        }
+        .gallery {
+            position: absolute;
+            background-color: #000;
+            margin-top: 150px;
+            width: 150%;
+            height: 60px;
+            .item {
+                position: absolute;
+                .inner {
+                    position: relative;
+                    img {
+                        width: 100%;
+                        display: block;
+                    }
+                }
+            }
+        }
+        .triangle {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 50px 250px 0 250px;
+            border-color: $dark-header-font-color transparent transparent transparent;
+            margin-top: 1500px;
+        }
     }
 }
 
 .contact {
     background-color: $contact-background;
     h2 {
-        // margin-top: 100px;
+        margin-top: 70px;
         color: $dark-header-font-color;
     }
     h2::before {
@@ -284,7 +316,7 @@ section {
         position: absolute;
         width: 60%;
         height: 70%;
-        margin-top: 80px;
+        margin-top: 150px;
         p {
             margin: 10px auto;
             color: $dark-font-color;
