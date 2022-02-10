@@ -357,7 +357,12 @@ section h2 {
   width: 0;
 }
 
-/* line 257, src/assets/scss/style.scss */
+/* line 256, src/assets/scss/style.scss */
+.portfolio {
+  z-index: 2;
+}
+
+/* line 258, src/assets/scss/style.scss */
 .portfolio h2::before {
   content: '';
   position: absolute;
@@ -367,7 +372,7 @@ section h2 {
   top: 50px;
 }
 
-/* line 260, src/assets/scss/style.scss */
+/* line 261, src/assets/scss/style.scss */
 .portfolio-container {
   position: absolute;
   display: flex;
@@ -376,7 +381,7 @@ section h2 {
   margin: 120px;
 }
 
-/* line 266, src/assets/scss/style.scss */
+/* line 267, src/assets/scss/style.scss */
 .portfolio-container .triangle {
   position: absolute;
   width: 0;
@@ -385,29 +390,30 @@ section h2 {
   border-width: 50px 250px 0 250px;
   border-color: #fff transparent transparent transparent;
   margin-top: 950px;
+  z-index: 6;
 }
 
-/* line 275, src/assets/scss/style.scss */
+/* line 277, src/assets/scss/style.scss */
 .portfolio-container .carousel {
   overflow: hidden;
   max-width: 700px;
   position: relative;
 }
 
-/* line 279, src/assets/scss/style.scss */
+/* line 281, src/assets/scss/style.scss */
 .portfolio-container .carousel-items,
 .portfolio-container .carousel .hidden {
   display: none;
 }
 
-/* line 283, src/assets/scss/style.scss */
+/* line 285, src/assets/scss/style.scss */
 .portfolio-container .carousel-items img {
   width: 700px;
   height: 450px;
   object-fit: cover;
 }
 
-/* line 288, src/assets/scss/style.scss */
+/* line 290, src/assets/scss/style.scss */
 .portfolio-container .carousel .portfolio-btn {
   position: relative;
   background-color: #0AC1C9;
@@ -420,18 +426,18 @@ section h2 {
   transition: .3s ease;
 }
 
-/* line 298, src/assets/scss/style.scss */
+/* line 300, src/assets/scss/style.scss */
 .portfolio-container .carousel .portfolio-btn:hover {
   background-image: linear-gradient(255deg, #27d86c 0%, #26caf8 50%, #c625d0 100%);
   font-size: 18.5px;
 }
 
-/* line 303, src/assets/scss/style.scss */
+/* line 305, src/assets/scss/style.scss */
 .portfolio-container .carousel .visible {
   display: block;
 }
 
-/* line 306, src/assets/scss/style.scss */
+/* line 308, src/assets/scss/style.scss */
 .portfolio-container .carousel-actions {
   display: flex;
   width: 100%;
@@ -441,7 +447,7 @@ section h2 {
   transform: translateY(-50%);
 }
 
-/* line 313, src/assets/scss/style.scss */
+/* line 315, src/assets/scss/style.scss */
 .portfolio-container .carousel-actions button {
   border-radius: 50px;
   border: 0;
@@ -454,25 +460,25 @@ section h2 {
   transition: .3s ease;
 }
 
-/* line 323, src/assets/scss/style.scss */
+/* line 325, src/assets/scss/style.scss */
 .portfolio-container .carousel-actions button:hover {
   color: #fff;
   background-color: #0AC1C9;
 }
 
-/* line 333, src/assets/scss/style.scss */
+/* line 335, src/assets/scss/style.scss */
 .contact {
   height: 600px;
   background-color: #2c2e39;
 }
 
-/* line 336, src/assets/scss/style.scss */
+/* line 338, src/assets/scss/style.scss */
 .contact h2 {
   margin-top: 70px;
   color: #fff;
 }
 
-/* line 340, src/assets/scss/style.scss */
+/* line 342, src/assets/scss/style.scss */
 .contact h2::before {
   content: '';
   position: absolute;
@@ -482,7 +488,7 @@ section h2 {
   top: 50px;
 }
 
-/* line 343, src/assets/scss/style.scss */
+/* line 345, src/assets/scss/style.scss */
 .contact-container {
   position: absolute;
   width: 60%;
@@ -490,7 +496,7 @@ section h2 {
   margin-top: 150px;
 }
 
-/* line 348, src/assets/scss/style.scss */
+/* line 350, src/assets/scss/style.scss */
 .contact-container .up {
   position: absolute;
   width: 50px;
@@ -500,26 +506,26 @@ section h2 {
   transition: .3s ease-in;
 }
 
-/* line 355, src/assets/scss/style.scss */
+/* line 357, src/assets/scss/style.scss */
 .contact-container .up img {
   width: 50px;
   height: 50px;
   object-fit: cover;
 }
 
-/* line 360, src/assets/scss/style.scss */
+/* line 362, src/assets/scss/style.scss */
 .contact-container .up:hover {
   background-color: #0AC1C9;
 }
 
-/* line 364, src/assets/scss/style.scss */
+/* line 366, src/assets/scss/style.scss */
 .contact-container p {
   margin: 10px auto;
   color: #0AC1C9;
   font-size: 18px;
 }
 
-/* line 369, src/assets/scss/style.scss */
+/* line 371, src/assets/scss/style.scss */
 .contact-container form {
   display: flex;
   flex-direction: column;
@@ -527,7 +533,7 @@ section h2 {
   margin: 35px auto;
 }
 
-/* line 374, src/assets/scss/style.scss */
+/* line 376, src/assets/scss/style.scss */
 .contact-container form input,
 .contact-container form textarea {
   padding: 7.5px;
@@ -536,7 +542,7 @@ section h2 {
   color: #fff;
 }
 
-/* line 381, src/assets/scss/style.scss */
+/* line 383, src/assets/scss/style.scss */
 .contact-container form button {
   padding: 10px;
   background-color: #1E242C;
@@ -548,13 +554,13 @@ section h2 {
   transition: .3s ease;
 }
 
-/* line 390, src/assets/scss/style.scss */
+/* line 392, src/assets/scss/style.scss */
 .contact-container form button:hover {
   background-color: #0AC1C9;
   box-shadow: 0 0 20px rgba(180, 246, 255, 0.77);
 }
 
-/* line 399, src/assets/scss/style.scss */
+/* line 401, src/assets/scss/style.scss */
 footer {
   z-index: 1;
   background-color: #1C242F;
@@ -566,12 +572,12 @@ footer {
   justify-content: center;
 }
 
-/* line 408, src/assets/scss/style.scss */
+/* line 410, src/assets/scss/style.scss */
 footer .icon-container {
   display: inline-flex;
 }
 
-/* line 410, src/assets/scss/style.scss */
+/* line 412, src/assets/scss/style.scss */
 footer .icon-container .icon {
   margin: 0 20px;
   cursor: pointer;
@@ -583,7 +589,7 @@ footer .icon-container .icon {
   z-index: 2;
 }
 
-/* line 419, src/assets/scss/style.scss */
+/* line 421, src/assets/scss/style.scss */
 footer .icon-container .icon span {
   display: block;
   width: 50px;
@@ -597,14 +603,14 @@ footer .icon-container .icon span {
   transition: all .5s ease;
 }
 
-/* line 430, src/assets/scss/style.scss */
+/* line 432, src/assets/scss/style.scss */
 footer .icon-container .icon span i {
   font-size: 25px;
   line-height: 50px;
   color: #fff;
 }
 
-/* line 435, src/assets/scss/style.scss */
+/* line 437, src/assets/scss/style.scss */
 footer .icon-container .icon span a {
   z-index: 5;
   position: absolute;
@@ -615,12 +621,12 @@ footer .icon-container .icon span a {
   height: 50px;
 }
 
-/* line 444, src/assets/scss/style.scss */
+/* line 446, src/assets/scss/style.scss */
 footer .icon-container .icon span:hover {
   background-color: #0AC1C9;
 }
 
-/* line 448, src/assets/scss/style.scss */
+/* line 450, src/assets/scss/style.scss */
 footer .icon-container .icon .tooltip {
   font-size: 20px;
   background: #0AC1C9;
@@ -635,7 +641,7 @@ footer .icon-container .icon .tooltip {
   pointer-events: none;
 }
 
-/* line 460, src/assets/scss/style.scss */
+/* line 462, src/assets/scss/style.scss */
 footer .icon-container .icon .tooltip::before {
   position: absolute;
   content: "";
@@ -647,22 +653,34 @@ footer .icon-container .icon .tooltip::before {
   transform: translateX(-50%) rotate(45deg);
 }
 
-/* line 472, src/assets/scss/style.scss */
+/* line 474, src/assets/scss/style.scss */
 footer .icon-container .icon:hover .tooltip {
   top: -70px;
   opacity: 1;
   pointer-events: auto;
 }
 
-/* line 478, src/assets/scss/style.scss */
+/* line 480, src/assets/scss/style.scss */
 footer .copy-right {
   position: absolute;
   margin-top: 150px;
   color: #797979;
 }
 
-/* line 482, src/assets/scss/style.scss */
+/* line 484, src/assets/scss/style.scss */
 footer .copy-right strong {
   color: #e21b6d;
   font-weight: lighter;
+}
+
+/* line 492, src/assets/scss/style.scss */
+.reveal {
+  position: relative;
+  opacity: 0;
+  transition: all 2.5s ease;
+}
+
+/* line 496, src/assets/scss/style.scss */
+.reveal.on-screen {
+  opacity: 1;
 }

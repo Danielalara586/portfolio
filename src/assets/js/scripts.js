@@ -27,8 +27,9 @@ window.addEventListener('scroll', () => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
 
-        if (currentScroll >= sectionTop - sectionHeight / 3)
+        if (currentScroll >= sectionTop - sectionHeight / 3) {
             sectionId = section.getAttribute('id');
+        }
 
     });
 
@@ -39,6 +40,9 @@ window.addEventListener('scroll', () => {
             option.classList.add('selected');
         }
     });
+
+    // Reveal animaiton
+    reveal();
 });
 
 // Skills bar hover
@@ -99,4 +103,20 @@ function moveToPrevSlide() {
     }
 
     updateSlidePosition();
+}
+
+const reveal = () => {
+    let reveals = document.querySelectorAll('.reveal');
+    reveals.forEach(r => {
+        let windowHeight = window.innerHeight;
+        let revealTop = r.getBoundingClientRect().top;
+        let revealPoint = 150;
+
+        if (revealTop < windowHeight - revealPoint) {
+            r.classList.add('on-screen');
+        } else {
+            r.classList.remove('on-screen');
+        }
+
+    });
 }
