@@ -63,16 +63,14 @@ let slidePosition = 0;
 const slides = document.getElementsByClassName('carousel-items');
 const totalSlides = slides.length;
 
-document.
-getElementById('next')
-    .addEventListener("click", function() {
-        moveToNextSlide();
-    });
-document.
-getElementById('prev')
-    .addEventListener("click", function() {
-        moveToPrevSlide();
-    });
+const nextButton = document.getElementById('next')
+nextButton.addEventListener("click", function() {
+    moveToNextSlide();
+});
+const prevButton = document.getElementById('prev')
+prevButton.addEventListener("click", function() {
+    moveToPrevSlide();
+});
 
 function updateSlidePosition() {
     for (let slide of slides) {

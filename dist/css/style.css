@@ -461,16 +461,17 @@ section h2 {
 
 /* line 332, src/assets/scss/style.scss */
 .contact {
+  height: 600px;
   background-color: #2c2e39;
 }
 
-/* line 334, src/assets/scss/style.scss */
+/* line 335, src/assets/scss/style.scss */
 .contact h2 {
   margin-top: 70px;
   color: #fff;
 }
 
-/* line 338, src/assets/scss/style.scss */
+/* line 339, src/assets/scss/style.scss */
 .contact h2::before {
   content: '';
   position: absolute;
@@ -480,7 +481,7 @@ section h2 {
   top: 50px;
 }
 
-/* line 341, src/assets/scss/style.scss */
+/* line 342, src/assets/scss/style.scss */
 .contact-container {
   position: absolute;
   width: 60%;
@@ -488,14 +489,14 @@ section h2 {
   margin-top: 150px;
 }
 
-/* line 346, src/assets/scss/style.scss */
+/* line 347, src/assets/scss/style.scss */
 .contact-container p {
   margin: 10px auto;
   color: #0AC1C9;
   font-size: 18px;
 }
 
-/* line 351, src/assets/scss/style.scss */
+/* line 352, src/assets/scss/style.scss */
 .contact-container form {
   display: flex;
   flex-direction: column;
@@ -503,7 +504,7 @@ section h2 {
   margin: 35px auto;
 }
 
-/* line 356, src/assets/scss/style.scss */
+/* line 357, src/assets/scss/style.scss */
 .contact-container form input,
 .contact-container form textarea {
   padding: 7.5px;
@@ -512,7 +513,7 @@ section h2 {
   color: #fff;
 }
 
-/* line 363, src/assets/scss/style.scss */
+/* line 364, src/assets/scss/style.scss */
 .contact-container form button {
   padding: 10px;
   background-color: #1E242C;
@@ -524,8 +525,121 @@ section h2 {
   transition: .3s ease;
 }
 
-/* line 372, src/assets/scss/style.scss */
+/* line 373, src/assets/scss/style.scss */
 .contact-container form button:hover {
   background-color: #0AC1C9;
   box-shadow: 0 0 20px rgba(180, 246, 255, 0.77);
+}
+
+/* line 382, src/assets/scss/style.scss */
+footer {
+  z-index: 1;
+  background-color: #1C242F;
+  text-align: center;
+  width: 100%;
+  padding: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 391, src/assets/scss/style.scss */
+footer .icon-container {
+  display: inline-flex;
+}
+
+/* line 393, src/assets/scss/style.scss */
+footer .icon-container .icon {
+  margin: 0 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+/* line 402, src/assets/scss/style.scss */
+footer .icon-container .icon span {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #2c2e39;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 2;
+  transition: all .5s ease;
+}
+
+/* line 413, src/assets/scss/style.scss */
+footer .icon-container .icon span i {
+  font-size: 25px;
+  line-height: 50px;
+  color: #fff;
+}
+
+/* line 418, src/assets/scss/style.scss */
+footer .icon-container .icon span a {
+  z-index: 5;
+  position: absolute;
+  display: block;
+  top: 10px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+/* line 427, src/assets/scss/style.scss */
+footer .icon-container .icon span:hover {
+  background-color: #0AC1C9;
+}
+
+/* line 431, src/assets/scss/style.scss */
+footer .icon-container .icon .tooltip {
+  font-size: 20px;
+  background: #0AC1C9;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 25px;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.256, 1.55);
+  pointer-events: none;
+}
+
+/* line 443, src/assets/scss/style.scss */
+footer .icon-container .icon .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-color: #0AC1C9;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+/* line 455, src/assets/scss/style.scss */
+footer .icon-container .icon:hover .tooltip {
+  top: -70px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* line 461, src/assets/scss/style.scss */
+footer .copy-right {
+  position: absolute;
+  margin-top: 150px;
+  color: #797979;
+}
+
+/* line 465, src/assets/scss/style.scss */
+footer .copy-right strong {
+  color: #e21b6d;
+  font-weight: lighter;
 }

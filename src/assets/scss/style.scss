@@ -330,6 +330,7 @@ section {
 }
 
 .contact {
+    height: 600px;
     background-color: $contact-background;
     h2 {
         margin-top: 70px;
@@ -374,6 +375,96 @@ section {
                     box-shadow: 0 0 20px rgba(180, 246, 255, 0.77);
                 }
             }
+        }
+    }
+}
+
+footer {
+    z-index: 1;
+    background-color: $dark-primary-color;
+    text-align: center;
+    width: 100%;
+    padding: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .icon-container {
+        display: inline-flex;
+        .icon {
+            margin: 0 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+            z-index: 2;
+            span {
+                display: block;
+                width: 50px;
+                height: 50px;
+                background-color: $contact-background;
+                border-radius: 50%;
+                text-align: center;
+                box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+                position: relative;
+                z-index: 2;
+                transition: all .5s ease;
+                i {
+                    font-size: 25px;
+                    line-height: 50px;
+                    color: $dark-header-font-color;
+                }
+                a {
+                    z-index: 5;
+                    position: absolute;
+                    display: block;
+                    top: 10px;
+                    border-radius: 50%;
+                    width: 50px;
+                    height: 50px;
+                }
+                &:hover {
+                    background-color: $dark-font-color;
+                }
+            }
+            .tooltip {
+                font-size: 20px;
+                background: $dark-font-color;
+                box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+                color: $dark-header-font-color;
+                padding: 10px 18px;
+                border-radius: 25px;
+                position: absolute;
+                top: 0;
+                opacity: 0;
+                transition: all 0.4s cubic-bezier(0.68, -0.55, 0.256, 1.55);
+                pointer-events: none;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    height: 15px;
+                    width: 15px;
+                    background-color: $dark-font-color;
+                    bottom: -8px;
+                    left: 50%;
+                    transform: translateX(-50%) rotate(45deg);
+                }
+            }
+        }
+        .icon:hover .tooltip {
+            top: -70px;
+            opacity: 1;
+            pointer-events: auto;
+        }
+    }
+    .copy-right {
+        position: absolute;
+        margin-top: 150px;
+        color: $copyright-font-color;
+        strong {
+            color: $hover-font-color;
+            font-weight: lighter;
         }
     }
 }
