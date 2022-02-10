@@ -411,6 +411,7 @@ section h2 {
 .portfolio-container .carousel .portfolio-btn {
   position: relative;
   background-color: #0AC1C9;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   color: #fff;
   border-radius: 50px;
   padding: 10px;
@@ -419,18 +420,18 @@ section h2 {
   transition: .3s ease;
 }
 
-/* line 297, src/assets/scss/style.scss */
+/* line 298, src/assets/scss/style.scss */
 .portfolio-container .carousel .portfolio-btn:hover {
-  background-color: #e21b6d;
+  background-image: linear-gradient(255deg, #27d86c 0%, #26caf8 50%, #c625d0 100%);
   font-size: 18.5px;
 }
 
-/* line 302, src/assets/scss/style.scss */
+/* line 303, src/assets/scss/style.scss */
 .portfolio-container .carousel .visible {
   display: block;
 }
 
-/* line 305, src/assets/scss/style.scss */
+/* line 306, src/assets/scss/style.scss */
 .portfolio-container .carousel-actions {
   display: flex;
   width: 100%;
@@ -440,7 +441,7 @@ section h2 {
   transform: translateY(-50%);
 }
 
-/* line 312, src/assets/scss/style.scss */
+/* line 313, src/assets/scss/style.scss */
 .portfolio-container .carousel-actions button {
   border-radius: 50px;
   border: 0;
@@ -453,25 +454,25 @@ section h2 {
   transition: .3s ease;
 }
 
-/* line 322, src/assets/scss/style.scss */
+/* line 323, src/assets/scss/style.scss */
 .portfolio-container .carousel-actions button:hover {
   color: #fff;
   background-color: #0AC1C9;
 }
 
-/* line 332, src/assets/scss/style.scss */
+/* line 333, src/assets/scss/style.scss */
 .contact {
   height: 600px;
   background-color: #2c2e39;
 }
 
-/* line 335, src/assets/scss/style.scss */
+/* line 336, src/assets/scss/style.scss */
 .contact h2 {
   margin-top: 70px;
   color: #fff;
 }
 
-/* line 339, src/assets/scss/style.scss */
+/* line 340, src/assets/scss/style.scss */
 .contact h2::before {
   content: '';
   position: absolute;
@@ -481,7 +482,7 @@ section h2 {
   top: 50px;
 }
 
-/* line 342, src/assets/scss/style.scss */
+/* line 343, src/assets/scss/style.scss */
 .contact-container {
   position: absolute;
   width: 60%;
@@ -489,7 +490,7 @@ section h2 {
   margin-top: 150px;
 }
 
-/* line 347, src/assets/scss/style.scss */
+/* line 348, src/assets/scss/style.scss */
 .contact-container .up {
   position: absolute;
   width: 50px;
@@ -499,26 +500,26 @@ section h2 {
   transition: .3s ease-in;
 }
 
-/* line 354, src/assets/scss/style.scss */
+/* line 355, src/assets/scss/style.scss */
 .contact-container .up img {
   width: 50px;
   height: 50px;
   object-fit: cover;
 }
 
-/* line 359, src/assets/scss/style.scss */
+/* line 360, src/assets/scss/style.scss */
 .contact-container .up:hover {
   background-color: #0AC1C9;
 }
 
-/* line 363, src/assets/scss/style.scss */
+/* line 364, src/assets/scss/style.scss */
 .contact-container p {
   margin: 10px auto;
   color: #0AC1C9;
   font-size: 18px;
 }
 
-/* line 368, src/assets/scss/style.scss */
+/* line 369, src/assets/scss/style.scss */
 .contact-container form {
   display: flex;
   flex-direction: column;
@@ -526,7 +527,7 @@ section h2 {
   margin: 35px auto;
 }
 
-/* line 373, src/assets/scss/style.scss */
+/* line 374, src/assets/scss/style.scss */
 .contact-container form input,
 .contact-container form textarea {
   padding: 7.5px;
@@ -535,7 +536,7 @@ section h2 {
   color: #fff;
 }
 
-/* line 380, src/assets/scss/style.scss */
+/* line 381, src/assets/scss/style.scss */
 .contact-container form button {
   padding: 10px;
   background-color: #1E242C;
@@ -547,13 +548,13 @@ section h2 {
   transition: .3s ease;
 }
 
-/* line 389, src/assets/scss/style.scss */
+/* line 390, src/assets/scss/style.scss */
 .contact-container form button:hover {
   background-color: #0AC1C9;
   box-shadow: 0 0 20px rgba(180, 246, 255, 0.77);
 }
 
-/* line 398, src/assets/scss/style.scss */
+/* line 399, src/assets/scss/style.scss */
 footer {
   z-index: 1;
   background-color: #1C242F;
@@ -565,12 +566,12 @@ footer {
   justify-content: center;
 }
 
-/* line 407, src/assets/scss/style.scss */
+/* line 408, src/assets/scss/style.scss */
 footer .icon-container {
   display: inline-flex;
 }
 
-/* line 409, src/assets/scss/style.scss */
+/* line 410, src/assets/scss/style.scss */
 footer .icon-container .icon {
   margin: 0 20px;
   cursor: pointer;
@@ -582,7 +583,7 @@ footer .icon-container .icon {
   z-index: 2;
 }
 
-/* line 418, src/assets/scss/style.scss */
+/* line 419, src/assets/scss/style.scss */
 footer .icon-container .icon span {
   display: block;
   width: 50px;
@@ -596,14 +597,14 @@ footer .icon-container .icon span {
   transition: all .5s ease;
 }
 
-/* line 429, src/assets/scss/style.scss */
+/* line 430, src/assets/scss/style.scss */
 footer .icon-container .icon span i {
   font-size: 25px;
   line-height: 50px;
   color: #fff;
 }
 
-/* line 434, src/assets/scss/style.scss */
+/* line 435, src/assets/scss/style.scss */
 footer .icon-container .icon span a {
   z-index: 5;
   position: absolute;
@@ -614,12 +615,12 @@ footer .icon-container .icon span a {
   height: 50px;
 }
 
-/* line 443, src/assets/scss/style.scss */
+/* line 444, src/assets/scss/style.scss */
 footer .icon-container .icon span:hover {
   background-color: #0AC1C9;
 }
 
-/* line 447, src/assets/scss/style.scss */
+/* line 448, src/assets/scss/style.scss */
 footer .icon-container .icon .tooltip {
   font-size: 20px;
   background: #0AC1C9;
@@ -634,7 +635,7 @@ footer .icon-container .icon .tooltip {
   pointer-events: none;
 }
 
-/* line 459, src/assets/scss/style.scss */
+/* line 460, src/assets/scss/style.scss */
 footer .icon-container .icon .tooltip::before {
   position: absolute;
   content: "";
@@ -646,21 +647,21 @@ footer .icon-container .icon .tooltip::before {
   transform: translateX(-50%) rotate(45deg);
 }
 
-/* line 471, src/assets/scss/style.scss */
+/* line 472, src/assets/scss/style.scss */
 footer .icon-container .icon:hover .tooltip {
   top: -70px;
   opacity: 1;
   pointer-events: auto;
 }
 
-/* line 477, src/assets/scss/style.scss */
+/* line 478, src/assets/scss/style.scss */
 footer .copy-right {
   position: absolute;
   margin-top: 150px;
   color: #797979;
 }
 
-/* line 481, src/assets/scss/style.scss */
+/* line 482, src/assets/scss/style.scss */
 footer .copy-right strong {
   color: #e21b6d;
   font-weight: lighter;

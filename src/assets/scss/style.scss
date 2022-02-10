@@ -288,6 +288,7 @@ section {
             .portfolio-btn {
                 position: relative;
                 background-color: $dark-font-color;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
                 color: $dark-header-font-color;
                 border-radius: 50px;
                 padding: 10px;
@@ -295,7 +296,7 @@ section {
                 display: inline-block;
                 transition: .3s ease;
                 &:hover {
-                    background-color: $hover-font-color;
+                    background-image: linear-gradient( 255deg, $btn-color-1 0%, $btn-color-2 50%, $btn-color-3 100%);
                     font-size: 18.5px;
                 }
             }
