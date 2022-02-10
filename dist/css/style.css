@@ -490,13 +490,35 @@ section h2 {
 }
 
 /* line 347, src/assets/scss/style.scss */
+.contact-container .up {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #e21b6d;
+  margin-top: 20px;
+  transition: .3s ease-in;
+}
+
+/* line 354, src/assets/scss/style.scss */
+.contact-container .up img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+/* line 359, src/assets/scss/style.scss */
+.contact-container .up:hover {
+  background-color: #0AC1C9;
+}
+
+/* line 363, src/assets/scss/style.scss */
 .contact-container p {
   margin: 10px auto;
   color: #0AC1C9;
   font-size: 18px;
 }
 
-/* line 352, src/assets/scss/style.scss */
+/* line 368, src/assets/scss/style.scss */
 .contact-container form {
   display: flex;
   flex-direction: column;
@@ -504,7 +526,7 @@ section h2 {
   margin: 35px auto;
 }
 
-/* line 357, src/assets/scss/style.scss */
+/* line 373, src/assets/scss/style.scss */
 .contact-container form input,
 .contact-container form textarea {
   padding: 7.5px;
@@ -513,7 +535,7 @@ section h2 {
   color: #fff;
 }
 
-/* line 364, src/assets/scss/style.scss */
+/* line 380, src/assets/scss/style.scss */
 .contact-container form button {
   padding: 10px;
   background-color: #1E242C;
@@ -525,13 +547,13 @@ section h2 {
   transition: .3s ease;
 }
 
-/* line 373, src/assets/scss/style.scss */
+/* line 389, src/assets/scss/style.scss */
 .contact-container form button:hover {
   background-color: #0AC1C9;
   box-shadow: 0 0 20px rgba(180, 246, 255, 0.77);
 }
 
-/* line 382, src/assets/scss/style.scss */
+/* line 398, src/assets/scss/style.scss */
 footer {
   z-index: 1;
   background-color: #1C242F;
@@ -543,12 +565,12 @@ footer {
   justify-content: center;
 }
 
-/* line 391, src/assets/scss/style.scss */
+/* line 407, src/assets/scss/style.scss */
 footer .icon-container {
   display: inline-flex;
 }
 
-/* line 393, src/assets/scss/style.scss */
+/* line 409, src/assets/scss/style.scss */
 footer .icon-container .icon {
   margin: 0 20px;
   cursor: pointer;
@@ -560,7 +582,7 @@ footer .icon-container .icon {
   z-index: 2;
 }
 
-/* line 402, src/assets/scss/style.scss */
+/* line 418, src/assets/scss/style.scss */
 footer .icon-container .icon span {
   display: block;
   width: 50px;
@@ -574,14 +596,14 @@ footer .icon-container .icon span {
   transition: all .5s ease;
 }
 
-/* line 413, src/assets/scss/style.scss */
+/* line 429, src/assets/scss/style.scss */
 footer .icon-container .icon span i {
   font-size: 25px;
   line-height: 50px;
   color: #fff;
 }
 
-/* line 418, src/assets/scss/style.scss */
+/* line 434, src/assets/scss/style.scss */
 footer .icon-container .icon span a {
   z-index: 5;
   position: absolute;
@@ -592,12 +614,12 @@ footer .icon-container .icon span a {
   height: 50px;
 }
 
-/* line 427, src/assets/scss/style.scss */
+/* line 443, src/assets/scss/style.scss */
 footer .icon-container .icon span:hover {
   background-color: #0AC1C9;
 }
 
-/* line 431, src/assets/scss/style.scss */
+/* line 447, src/assets/scss/style.scss */
 footer .icon-container .icon .tooltip {
   font-size: 20px;
   background: #0AC1C9;
@@ -612,7 +634,7 @@ footer .icon-container .icon .tooltip {
   pointer-events: none;
 }
 
-/* line 443, src/assets/scss/style.scss */
+/* line 459, src/assets/scss/style.scss */
 footer .icon-container .icon .tooltip::before {
   position: absolute;
   content: "";
@@ -624,21 +646,21 @@ footer .icon-container .icon .tooltip::before {
   transform: translateX(-50%) rotate(45deg);
 }
 
-/* line 455, src/assets/scss/style.scss */
+/* line 471, src/assets/scss/style.scss */
 footer .icon-container .icon:hover .tooltip {
   top: -70px;
   opacity: 1;
   pointer-events: auto;
 }
 
-/* line 461, src/assets/scss/style.scss */
+/* line 477, src/assets/scss/style.scss */
 footer .copy-right {
   position: absolute;
   margin-top: 150px;
   color: #797979;
 }
 
-/* line 465, src/assets/scss/style.scss */
+/* line 481, src/assets/scss/style.scss */
 footer .copy-right strong {
   color: #e21b6d;
   font-weight: lighter;
