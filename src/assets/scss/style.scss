@@ -11,6 +11,7 @@
 html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     scroll-behavior: smooth;
+    font-size: 62.5%;
 }
 
 section[id] {
@@ -23,7 +24,7 @@ a {
 }
 
 .btn {
-    @include customize-text(18px, $dark-header-font-color, 20px);
+    @include customize-text(1.8rem, $dark-header-font-color, 20px);
     border-radius: 25px;
     position: relative;
     overflow: hidden;
@@ -55,10 +56,10 @@ a {
     &-content {
         z-index: 2;
         h1 {
-            @include customize-text(50px, $dark-header-font-color, 20px);
+            @include customize-text(5rem, $dark-header-font-color, 20px);
         }
         p {
-            @include customize-text(27.5px, $dark-header-font-color, 50px);
+            @include customize-text(2.75rem, $dark-header-font-color, 50px);
             line-height: 175%;
             strong {
                 color: $dark-font-color;
@@ -66,7 +67,7 @@ a {
         }
         .btn:hover {
             box-shadow: 0 0 20px rgba(180, 246, 255, 0.77);
-            font-size: 23px;
+            font-size: 2.3rem;
         }
     }
 }
@@ -98,7 +99,7 @@ nav {
             line-height: 80px;
             margin: 0 20px;
             color: $dark-header-font-color;
-            font-size: 20px;
+            font-size: 2rem;
             transition: all 0.5s ease 0s;
         }
         a:hover {
@@ -108,7 +109,7 @@ nav {
             color: $hover-font-color;
         }
     }
-    @media (max-width: 1680px) {}
+    // @media (max-width: 1680px) {}
 }
 
 section {
@@ -119,6 +120,7 @@ section {
     text-justify: auto;
     padding: 20px;
     h2 {
+        font-size: 2.5rem;
         display: inline-block;
         position: relative;
         color: $dark-primary-color;
@@ -142,13 +144,13 @@ section {
             z-index: -1;
         }
         h4 {
-            @include customize-text(23px, $dark-primary-color, 20px);
+            @include customize-text(2.3rem, $dark-primary-color, 20px);
         }
         .cv-title {
             margin: 30px 0 40px;
         }
         p {
-            @include customize-text(20px, $dark-primary-color, 20px);
+            @include customize-text(2rem, $dark-primary-color, 20px);
             text-align: center;
             letter-spacing: 1px;
             line-height: 175%;
@@ -165,7 +167,7 @@ section {
         }
         .cv-btn:hover {
             box-shadow: 0 0 20px rgba(0, 90, 207, 0.75);
-            font-size: 23px;
+            font-size: 2.3rem;
         }
     }
     .icons {
@@ -208,6 +210,7 @@ section {
             h3 {
                 margin-top: 50px;
                 color: $dark-header-font-color;
+                font-size: 1.8rem;
             }
         }
         figure:hover>.layer {
@@ -238,7 +241,7 @@ section {
             p {
                 text-align: left;
                 margin: 12px 100px;
-                font-size: 23px;
+                font-size: 2.3rem;
             }
             &-bar {
                 @include skill-bar($bar-background-color);
@@ -249,6 +252,9 @@ section {
                     padding-left: 5px;
                     width: 0;
                 }
+            }
+            .percent {
+                font-size: 1.5rem;
             }
         }
     }
@@ -298,9 +304,10 @@ section {
                 margin: 10px 20px;
                 display: inline-block;
                 transition: .3s ease;
+                font-size: 1.5rem;
                 &:hover {
                     background-image: linear-gradient( 255deg, $btn-color-1 0%, $btn-color-2 50%, $btn-color-3 100%);
-                    font-size: 18.5px;
+                    font-size: 1.85rem;
                 }
             }
             .visible {
@@ -367,7 +374,7 @@ section {
         p {
             margin: 10px auto;
             color: $dark-font-color;
-            font-size: 18px;
+            font-size: 1.8rem;
         }
         form {
             display: flex;
@@ -431,7 +438,7 @@ footer {
                 z-index: 2;
                 transition: all .5s ease;
                 i {
-                    font-size: 25px;
+                    font-size: 2.5rem;
                     line-height: 50px;
                     color: $dark-header-font-color;
                 }
@@ -449,7 +456,7 @@ footer {
                 }
             }
             .tooltip {
-                font-size: 20px;
+                font-size: 2rem;
                 background: $dark-font-color;
                 box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
                 color: $dark-header-font-color;
@@ -481,6 +488,7 @@ footer {
     .copy-right {
         position: absolute;
         margin-top: 150px;
+        font-size: 1.5rem;
         color: $copyright-font-color;
         strong {
             color: $hover-font-color;

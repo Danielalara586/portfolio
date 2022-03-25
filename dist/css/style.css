@@ -11,22 +11,23 @@
 html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 
-/* line 16, src/assets/scss/style.scss */
+/* line 17, src/assets/scss/style.scss */
 section[id] {
   scroll-margin-top: 80px;
 }
 
-/* line 20, src/assets/scss/style.scss */
+/* line 21, src/assets/scss/style.scss */
 a {
   text-decoration: none;
   cursor: pointer;
 }
 
-/* line 25, src/assets/scss/style.scss */
+/* line 26, src/assets/scss/style.scss */
 .btn, .about article .cv-btn {
-  font-size: 18px;
+  font-size: 1.8rem;
   color: #fff;
   margin: 20px;
   border-radius: 25px;
@@ -38,7 +39,7 @@ a {
   transition: all 0.3s;
 }
 
-/* line 36, src/assets/scss/style.scss */
+/* line 37, src/assets/scss/style.scss */
 .header {
   height: 100vh;
   display: flex;
@@ -46,7 +47,7 @@ a {
   justify-content: center;
 }
 
-/* line 41, src/assets/scss/style.scss */
+/* line 42, src/assets/scss/style.scss */
 .header-video {
   position: absolute;
   top: 0;
@@ -56,13 +57,13 @@ a {
   overflow: hidden;
 }
 
-/* line 44, src/assets/scss/style.scss */
+/* line 45, src/assets/scss/style.scss */
 .header-video video {
   min-width: 100%;
   min-height: 100%;
 }
 
-/* line 49, src/assets/scss/style.scss */
+/* line 50, src/assets/scss/style.scss */
 .header-overlay {
   position: absolute;
   top: 0;
@@ -74,38 +75,38 @@ a {
   opacity: 0.75;
 }
 
-/* line 55, src/assets/scss/style.scss */
+/* line 56, src/assets/scss/style.scss */
 .header-content {
   z-index: 2;
 }
 
-/* line 57, src/assets/scss/style.scss */
+/* line 58, src/assets/scss/style.scss */
 .header-content h1 {
-  font-size: 50px;
+  font-size: 5rem;
   color: #fff;
   margin: 20px;
 }
 
-/* line 60, src/assets/scss/style.scss */
+/* line 61, src/assets/scss/style.scss */
 .header-content p {
-  font-size: 27.5px;
+  font-size: 2.75rem;
   color: #fff;
   margin: 50px;
   line-height: 175%;
 }
 
-/* line 63, src/assets/scss/style.scss */
+/* line 64, src/assets/scss/style.scss */
 .header-content p strong {
   color: #0AC1C9;
 }
 
-/* line 67, src/assets/scss/style.scss */
+/* line 68, src/assets/scss/style.scss */
 .header-content .btn:hover, .header-content .about article .cv-btn:hover, .about article .header-content .cv-btn:hover {
   box-shadow: 0 0 20px rgba(180, 246, 255, 0.77);
-  font-size: 23px;
+  font-size: 2.3rem;
 }
 
-/* line 74, src/assets/scss/style.scss */
+/* line 75, src/assets/scss/style.scss */
 .content {
   max-width: 784px;
   padding-left: 16px;
@@ -114,7 +115,7 @@ a {
   text-align: center;
 }
 
-/* line 82, src/assets/scss/style.scss */
+/* line 83, src/assets/scss/style.scss */
 nav {
   background-color: #1C242F;
   height: 80px;
@@ -122,7 +123,7 @@ nav {
   border-bottom: 3px solid #0AC1C9;
 }
 
-/* line 87, src/assets/scss/style.scss */
+/* line 88, src/assets/scss/style.scss */
 nav.menu-fixed {
   position: fixed;
   left: 0;
@@ -130,33 +131,33 @@ nav.menu-fixed {
   z-index: 10;
 }
 
-/* line 93, src/assets/scss/style.scss */
+/* line 94, src/assets/scss/style.scss */
 nav .nav_links {
   float: left;
   margin-left: 30px;
 }
 
-/* line 96, src/assets/scss/style.scss */
+/* line 97, src/assets/scss/style.scss */
 nav .nav_links a {
   display: inline-block;
   line-height: 80px;
   margin: 0 20px;
   color: #fff;
-  font-size: 20px;
+  font-size: 2rem;
   transition: all 0.5s ease 0s;
 }
 
-/* line 104, src/assets/scss/style.scss */
+/* line 105, src/assets/scss/style.scss */
 nav .nav_links a:hover {
   color: #e21b6d;
 }
 
-/* line 107, src/assets/scss/style.scss */
+/* line 108, src/assets/scss/style.scss */
 nav .nav_links .selected {
   color: #e21b6d;
 }
 
-/* line 114, src/assets/scss/style.scss */
+/* line 115, src/assets/scss/style.scss */
 section {
   height: 100vh;
   display: flex;
@@ -166,15 +167,16 @@ section {
   padding: 20px;
 }
 
-/* line 121, src/assets/scss/style.scss */
+/* line 122, src/assets/scss/style.scss */
 section h2 {
+  font-size: 2.5rem;
   display: inline-block;
   position: relative;
   color: #1C242F;
   font-weight: bold;
 }
 
-/* line 130, src/assets/scss/style.scss */
+/* line 132, src/assets/scss/style.scss */
 .about h2::before {
   content: '';
   position: absolute;
@@ -184,7 +186,7 @@ section h2 {
   top: 50px;
 }
 
-/* line 134, src/assets/scss/style.scss */
+/* line 136, src/assets/scss/style.scss */
 .about article .profile {
   height: 200px;
   width: 200px;
@@ -196,21 +198,21 @@ section h2 {
   z-index: -1;
 }
 
-/* line 144, src/assets/scss/style.scss */
+/* line 146, src/assets/scss/style.scss */
 .about article h4 {
-  font-size: 23px;
+  font-size: 2.3rem;
   color: #1C242F;
   margin: 20px;
 }
 
-/* line 147, src/assets/scss/style.scss */
+/* line 149, src/assets/scss/style.scss */
 .about article .cv-title {
   margin: 30px 0 40px;
 }
 
-/* line 150, src/assets/scss/style.scss */
+/* line 152, src/assets/scss/style.scss */
 .about article p {
-  font-size: 20px;
+  font-size: 2rem;
   color: #1C242F;
   margin: 20px;
   text-align: center;
@@ -218,24 +220,24 @@ section h2 {
   line-height: 175%;
 }
 
-/* line 155, src/assets/scss/style.scss */
+/* line 157, src/assets/scss/style.scss */
 .about article p a {
   color: #0AC1C9;
   transition: 0.3s ease;
 }
 
-/* line 159, src/assets/scss/style.scss */
+/* line 161, src/assets/scss/style.scss */
 .about article p a:hover {
   color: #e21b6d;
 }
 
-/* line 166, src/assets/scss/style.scss */
+/* line 168, src/assets/scss/style.scss */
 .about article .cv-btn:hover {
   box-shadow: 0 0 20px rgba(0, 90, 207, 0.75);
-  font-size: 23px;
+  font-size: 2.3rem;
 }
 
-/* line 171, src/assets/scss/style.scss */
+/* line 173, src/assets/scss/style.scss */
 .about .icons {
   width: 100%;
   display: flex;
@@ -243,7 +245,7 @@ section h2 {
   align-items: center;
 }
 
-/* line 176, src/assets/scss/style.scss */
+/* line 178, src/assets/scss/style.scss */
 .about .icons figure {
   background-color: #08A1A6;
   align-items: center;
@@ -255,7 +257,7 @@ section h2 {
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
 
-/* line 185, src/assets/scss/style.scss */
+/* line 187, src/assets/scss/style.scss */
 .about .icons figure img {
   object-fit: cover;
   object-position: center;
@@ -265,7 +267,7 @@ section h2 {
   transform: all 0.5s ease-out;
 }
 
-/* line 193, src/assets/scss/style.scss */
+/* line 195, src/assets/scss/style.scss */
 .about .icons figure .layer {
   position: absolute;
   top: 0;
@@ -278,41 +280,42 @@ section h2 {
   text-align: center;
 }
 
-/* line 204, src/assets/scss/style.scss */
+/* line 206, src/assets/scss/style.scss */
 .about .icons figure .align {
   margin-top: 65px;
   color: #fff;
 }
 
-/* line 208, src/assets/scss/style.scss */
+/* line 210, src/assets/scss/style.scss */
 .about .icons figure h3 {
   margin-top: 50px;
   color: #fff;
+  font-size: 1.8rem;
 }
 
-/* line 213, src/assets/scss/style.scss */
+/* line 216, src/assets/scss/style.scss */
 .about .icons figure:hover > .layer {
   opacity: 1;
   visibility: visible;
 }
 
-/* line 218, src/assets/scss/style.scss */
+/* line 221, src/assets/scss/style.scss */
 .about .container {
   min-height: 100vh;
   width: 100%;
 }
 
-/* line 222, src/assets/scss/style.scss */
+/* line 225, src/assets/scss/style.scss */
 .about .testimonial {
   padding: 30px 100px;
 }
 
-/* line 227, src/assets/scss/style.scss */
+/* line 230, src/assets/scss/style.scss */
 .skills {
   margin: 120px;
 }
 
-/* line 228, src/assets/scss/style.scss */
+/* line 231, src/assets/scss/style.scss */
 .skills h2::before {
   content: '';
   position: absolute;
@@ -322,7 +325,7 @@ section h2 {
   top: 50px;
 }
 
-/* line 232, src/assets/scss/style.scss */
+/* line 235, src/assets/scss/style.scss */
 .skills .skill-container {
   position: absolute;
   width: 50%;
@@ -330,14 +333,14 @@ section h2 {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* line 238, src/assets/scss/style.scss */
+/* line 241, src/assets/scss/style.scss */
 .skills .skill-container .skill p {
   text-align: left;
   margin: 12px 100px;
-  font-size: 23px;
+  font-size: 2.3rem;
 }
 
-/* line 243, src/assets/scss/style.scss */
+/* line 246, src/assets/scss/style.scss */
 .skills .skill-container .skill-bar {
   height: 22px;
   background-color: #c1c1c1;
@@ -347,7 +350,7 @@ section h2 {
   box-shadow: 5px 2px 5px 2px rgba(0, 0, 0, 0.5);
 }
 
-/* line 247, src/assets/scss/style.scss */
+/* line 250, src/assets/scss/style.scss */
 .skills .skill-container .skill-bar div {
   height: 22px;
   background-color: #c1c1c1;
@@ -357,12 +360,17 @@ section h2 {
   width: 0;
 }
 
-/* line 257, src/assets/scss/style.scss */
+/* line 256, src/assets/scss/style.scss */
+.skills .skill-container .skill .percent {
+  font-size: 1.5rem;
+}
+
+/* line 263, src/assets/scss/style.scss */
 .portfolio {
   z-index: 2;
 }
 
-/* line 259, src/assets/scss/style.scss */
+/* line 265, src/assets/scss/style.scss */
 .portfolio h2::before {
   content: '';
   position: absolute;
@@ -372,7 +380,7 @@ section h2 {
   top: 50px;
 }
 
-/* line 262, src/assets/scss/style.scss */
+/* line 268, src/assets/scss/style.scss */
 .portfolio-container {
   position: absolute;
   display: flex;
@@ -391,27 +399,27 @@ section h2 {
         }*/
 }
 
-/* line 278, src/assets/scss/style.scss */
+/* line 284, src/assets/scss/style.scss */
 .portfolio-container .carousel {
   overflow: hidden;
   max-width: 700px;
   position: relative;
 }
 
-/* line 282, src/assets/scss/style.scss */
+/* line 288, src/assets/scss/style.scss */
 .portfolio-container .carousel-items,
 .portfolio-container .carousel .hidden {
   display: none;
 }
 
-/* line 286, src/assets/scss/style.scss */
+/* line 292, src/assets/scss/style.scss */
 .portfolio-container .carousel-items img {
   width: 700px;
   height: 450px;
   object-fit: cover;
 }
 
-/* line 291, src/assets/scss/style.scss */
+/* line 297, src/assets/scss/style.scss */
 .portfolio-container .carousel .portfolio-btn {
   position: relative;
   background-color: #0AC1C9;
@@ -422,20 +430,21 @@ section h2 {
   margin: 10px 20px;
   display: inline-block;
   transition: .3s ease;
+  font-size: 1.5rem;
 }
 
-/* line 301, src/assets/scss/style.scss */
+/* line 308, src/assets/scss/style.scss */
 .portfolio-container .carousel .portfolio-btn:hover {
   background-image: linear-gradient(255deg, #27d86c 0%, #26caf8 50%, #c625d0 100%);
-  font-size: 18.5px;
+  font-size: 1.85rem;
 }
 
-/* line 306, src/assets/scss/style.scss */
+/* line 313, src/assets/scss/style.scss */
 .portfolio-container .carousel .visible {
   display: block;
 }
 
-/* line 309, src/assets/scss/style.scss */
+/* line 316, src/assets/scss/style.scss */
 .portfolio-container .carousel-actions {
   display: flex;
   width: 100%;
@@ -445,7 +454,7 @@ section h2 {
   transform: translateY(-50%);
 }
 
-/* line 316, src/assets/scss/style.scss */
+/* line 323, src/assets/scss/style.scss */
 .portfolio-container .carousel-actions button {
   border-radius: 50px;
   border: 0;
@@ -458,25 +467,25 @@ section h2 {
   transition: .3s ease;
 }
 
-/* line 326, src/assets/scss/style.scss */
+/* line 333, src/assets/scss/style.scss */
 .portfolio-container .carousel-actions button:hover {
   color: #fff;
   background-color: #0AC1C9;
 }
 
-/* line 336, src/assets/scss/style.scss */
+/* line 343, src/assets/scss/style.scss */
 .contact {
   height: 600px;
   background-color: #2c2e39;
 }
 
-/* line 339, src/assets/scss/style.scss */
+/* line 346, src/assets/scss/style.scss */
 .contact h2 {
   margin-top: 70px;
   color: #fff;
 }
 
-/* line 343, src/assets/scss/style.scss */
+/* line 350, src/assets/scss/style.scss */
 .contact h2::before {
   content: '';
   position: absolute;
@@ -486,7 +495,7 @@ section h2 {
   top: 50px;
 }
 
-/* line 346, src/assets/scss/style.scss */
+/* line 353, src/assets/scss/style.scss */
 .contact-container {
   position: absolute;
   width: 60%;
@@ -494,7 +503,7 @@ section h2 {
   margin-top: 150px;
 }
 
-/* line 351, src/assets/scss/style.scss */
+/* line 358, src/assets/scss/style.scss */
 .contact-container .up {
   position: absolute;
   width: 50px;
@@ -504,26 +513,26 @@ section h2 {
   transition: .3s ease-in;
 }
 
-/* line 358, src/assets/scss/style.scss */
+/* line 365, src/assets/scss/style.scss */
 .contact-container .up img {
   width: 50px;
   height: 50px;
   object-fit: cover;
 }
 
-/* line 363, src/assets/scss/style.scss */
+/* line 370, src/assets/scss/style.scss */
 .contact-container .up:hover {
   background-color: #0AC1C9;
 }
 
-/* line 367, src/assets/scss/style.scss */
+/* line 374, src/assets/scss/style.scss */
 .contact-container p {
   margin: 10px auto;
   color: #0AC1C9;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
-/* line 372, src/assets/scss/style.scss */
+/* line 379, src/assets/scss/style.scss */
 .contact-container form {
   display: flex;
   flex-direction: column;
@@ -531,7 +540,7 @@ section h2 {
   margin: 35px auto;
 }
 
-/* line 377, src/assets/scss/style.scss */
+/* line 384, src/assets/scss/style.scss */
 .contact-container form input,
 .contact-container form textarea {
   padding: 7.5px;
@@ -540,7 +549,7 @@ section h2 {
   color: #fff;
 }
 
-/* line 384, src/assets/scss/style.scss */
+/* line 391, src/assets/scss/style.scss */
 .contact-container form button {
   padding: 10px;
   background-color: #1E242C;
@@ -552,13 +561,13 @@ section h2 {
   transition: .3s ease;
 }
 
-/* line 393, src/assets/scss/style.scss */
+/* line 400, src/assets/scss/style.scss */
 .contact-container form button:hover {
   background-color: #0AC1C9;
   box-shadow: 0 0 20px rgba(180, 246, 255, 0.77);
 }
 
-/* line 402, src/assets/scss/style.scss */
+/* line 409, src/assets/scss/style.scss */
 footer {
   z-index: 1;
   background-color: #1C242F;
@@ -570,12 +579,12 @@ footer {
   justify-content: center;
 }
 
-/* line 411, src/assets/scss/style.scss */
+/* line 418, src/assets/scss/style.scss */
 footer .icon-container {
   display: inline-flex;
 }
 
-/* line 413, src/assets/scss/style.scss */
+/* line 420, src/assets/scss/style.scss */
 footer .icon-container .icon {
   margin: 0 20px;
   cursor: pointer;
@@ -587,7 +596,7 @@ footer .icon-container .icon {
   z-index: 2;
 }
 
-/* line 422, src/assets/scss/style.scss */
+/* line 429, src/assets/scss/style.scss */
 footer .icon-container .icon span {
   display: block;
   width: 50px;
@@ -601,14 +610,14 @@ footer .icon-container .icon span {
   transition: all .5s ease;
 }
 
-/* line 433, src/assets/scss/style.scss */
+/* line 440, src/assets/scss/style.scss */
 footer .icon-container .icon span i {
-  font-size: 25px;
+  font-size: 2.5rem;
   line-height: 50px;
   color: #fff;
 }
 
-/* line 438, src/assets/scss/style.scss */
+/* line 445, src/assets/scss/style.scss */
 footer .icon-container .icon span a {
   z-index: 5;
   position: absolute;
@@ -619,14 +628,14 @@ footer .icon-container .icon span a {
   height: 50px;
 }
 
-/* line 447, src/assets/scss/style.scss */
+/* line 454, src/assets/scss/style.scss */
 footer .icon-container .icon span:hover {
   background-color: #0AC1C9;
 }
 
-/* line 451, src/assets/scss/style.scss */
+/* line 458, src/assets/scss/style.scss */
 footer .icon-container .icon .tooltip {
-  font-size: 20px;
+  font-size: 2rem;
   background: #0AC1C9;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
   color: #fff;
@@ -639,7 +648,7 @@ footer .icon-container .icon .tooltip {
   pointer-events: none;
 }
 
-/* line 463, src/assets/scss/style.scss */
+/* line 470, src/assets/scss/style.scss */
 footer .icon-container .icon .tooltip::before {
   position: absolute;
   content: "";
@@ -651,34 +660,35 @@ footer .icon-container .icon .tooltip::before {
   transform: translateX(-50%) rotate(45deg);
 }
 
-/* line 475, src/assets/scss/style.scss */
+/* line 482, src/assets/scss/style.scss */
 footer .icon-container .icon:hover .tooltip {
   top: -70px;
   opacity: 1;
   pointer-events: auto;
 }
 
-/* line 481, src/assets/scss/style.scss */
+/* line 488, src/assets/scss/style.scss */
 footer .copy-right {
   position: absolute;
   margin-top: 150px;
+  font-size: 1.5rem;
   color: #797979;
 }
 
-/* line 485, src/assets/scss/style.scss */
+/* line 493, src/assets/scss/style.scss */
 footer .copy-right strong {
   color: #e21b6d;
   font-weight: lighter;
 }
 
-/* line 493, src/assets/scss/style.scss */
+/* line 501, src/assets/scss/style.scss */
 .reveal {
   position: relative;
   opacity: 0;
   transition: all 2.5s ease;
 }
 
-/* line 497, src/assets/scss/style.scss */
+/* line 505, src/assets/scss/style.scss */
 .reveal.on-screen {
   opacity: 1;
 }
