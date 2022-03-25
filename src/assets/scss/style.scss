@@ -14,6 +14,11 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
 section[id] {
     scroll-margin-top: 80px;
 }
@@ -83,7 +88,7 @@ a {
 nav {
     background-color: $dark-primary-color;
     height: 80px;
-    width: 100vw;
+    min-width: 100%;
     border-bottom: 3px solid $dark-font-color;
     &.menu-fixed {
         position: fixed;
