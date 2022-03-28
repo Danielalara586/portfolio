@@ -1,8 +1,10 @@
 // Variable init
 const sections = document.querySelectorAll('section');
 const navigation = document.querySelectorAll('.nav_links a[href^="#"]');
+const links = document.getElementById('links');
 let menu = document.getElementById('nav-menu');
 let height = document.querySelector('header').offsetHeight - 150;
+
 
 function menuLoader() {
     if (window.pageYOffset > height)
@@ -61,6 +63,12 @@ skillBars.forEach(skillBar => {
         bar.style.transition = '.8s';
     }
 });
+
+// Responsive menu
+const btn_menu = document.querySelector('.btn-menu');
+btn_menu.addEventListener('click', () => {
+    links.classList.toggle('visible');
+})
 
 // Carousel 
 let slidePosition = 0;
