@@ -56,7 +56,7 @@ a {
         @include full-screen;
         background-color: $overlay-backgound;
         z-index: 1;
-        opacity: 0.75;
+        opacity: 0.65;
     }
     &-content {
         z-index: 2;
@@ -90,6 +90,15 @@ nav {
     height: 80px;
     min-width: 100%;
     border-bottom: 3px solid $dark-font-color;
+    display: flex;
+    align-items: center;
+    .btn-menu {
+        font-size: 2.5rem;
+        margin-left: 25px;
+        color: $dark-header-font-color;
+        background-color: $dark-primary-color;
+        display: none;
+    }
     &.menu-fixed {
         position: fixed;
         left: 0;
@@ -114,7 +123,30 @@ nav {
             color: $hover-font-color;
         }
     }
-    // @media (max-width: 1680px) {}
+    @media (max-width: 720px) {
+        height: 60px;
+        .btn-menu {
+            display: inline-flex;
+            cursor: pointer;
+        }
+        .nav_links {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-color: $overlay-backgound;
+            position: fixed;
+            top: 60px;
+            min-width: 100%;
+            height: calc(100% - 60px);
+            overflow-y: auto;
+            left: 100%;
+            transition: left 0.3s;
+        }
+        .visible {
+            left: 0;
+        }
+    }
 }
 
 section {
