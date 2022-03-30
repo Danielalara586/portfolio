@@ -64,11 +64,18 @@ skillBars.forEach(skillBar => {
     }
 });
 
+// Toggle menu function
+const toggle = function() {
+    links.classList.toggle('visible');
+}
+
 // Responsive menu
 const btn_menu = document.querySelector('.btn-menu');
-btn_menu.addEventListener('click', () => {
-    links.classList.toggle('visible');
-})
+btn_menu.addEventListener('click', toggle);
+
+navigation.forEach(nav => {
+    nav.addEventListener('click', toggle);
+});
 
 // Carousel 
 let slidePosition = 0;
